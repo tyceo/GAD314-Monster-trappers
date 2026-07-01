@@ -525,7 +525,10 @@ PlayerSettings:
       m_Height: 720
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -925,10 +928,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: cc1e7aa5-0c34-41c8-9a33-6124a71aa3d7
+  cloudProjectId: 38f2c38e-e43d-4227-bb8d-77d07d0f34c4
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GAD314 Monster trappers
+  projectName: GAD314 Monster trappers (2)
   organizationId: tyceo87
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
