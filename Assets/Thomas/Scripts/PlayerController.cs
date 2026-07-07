@@ -22,6 +22,20 @@ public class PlayerController : NetworkBehaviour
     private InputAction moveAction;
     private InputAction lookAction;
     private InputAction jumpAction;
+    
+    
+    [Header("Keys and Doors")]
+    private GameObject greenDoor;
+    private GameObject blueDoor;
+    private GameObject purpleDoor;
+    private GameObject orangeDoor;
+    private GameObject greenKey;
+    private GameObject blueKey;
+    private GameObject purpleKey;
+    private GameObject orangeKey;
+    
+    [Header("Respawn")]
+    [SerializeField] private Vector3 respawnPosition = new Vector3(3.35f, 1.83f, -4.38f);
 
     public override void OnNetworkSpawn()
     {
@@ -32,6 +46,9 @@ public class PlayerController : NetworkBehaviour
             enabled = false;
             return;
         }
+        
+        // Enable fog
+        RenderSettings.fog = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -64,7 +81,19 @@ public class PlayerController : NetworkBehaviour
     {
         characterController = GetComponent<CharacterController>();
     }
-
+    private void Start()
+    {
+        // Find all keys and doors by name
+        greenDoor = GameObject.Find("GreenDoor");
+        blueDoor = GameObject.Find("BlueDoor");
+        purpleDoor = GameObject.Find("PurpleDoor");
+        orangeDoor = GameObject.Find("OrangeDoor");
+        
+        greenKey = GameObject.Find("GreenKey");
+        blueKey = GameObject.Find("BlueKey");
+        purpleKey = GameObject.Find("PurpleKey");
+        orangeKey = GameObject.Find("OrangeKey");
+    }
     private void Update()
     {
         HandleLook();
@@ -102,5 +131,97 @@ public class PlayerController : NetworkBehaviour
         // Apply gravity
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!IsOwner) return;
+        
+        // Check if player touched a death trigger
+        if (other.CompareTag("PlayerDie"))
+        {
+            RespawnPlayer();
+            return;
+        }
+
+        // Check if player touched a key
+        if (other.gameObject == greenKey)
+        {
+            CollectKeyServerRpc("green");
+        }
+        else if (other.gameObject == blueKey)
+        {
+            CollectKeyServerRpc("blue");
+        }
+        else if (other.gameObject == purpleKey)
+        {
+            CollectKeyServerRpc("purple");
+        }
+        else if (other.gameObject == orangeKey)
+        {
+            CollectKeyServerRpc("orange");
+        }
+    }
+    private void RespawnPlayer()
+    {
+        // Disable CharacterController temporarily to allow position change
+        characterController.enabled = false;
+        transform.position = respawnPosition;
+        velocity = Vector3.zero; // Reset velocity
+        characterController.enabled = true;
+    }
+
+    [ServerRpc]
+    private void CollectKeyServerRpc(string color)
+    {
+        // This runs on the server and will be synced to all clients
+        GameObject key = null;
+        GameObject door = null;
+
+        switch (color)
+        {
+            case "green":
+                key = GameObject.Find("GreenKey");
+                door = GameObject.Find("GreenDoor");
+                break;
+            case "blue":
+                key = GameObject.Find("BlueKey");
+                door = GameObject.Find("BlueDoor");
+                break;
+            case "purple":
+                key = GameObject.Find("PurpleKey");
+                door = GameObject.Find("PurpleDoor");
+                break;
+            case "orange":
+                key = GameObject.Find("OrangeKey");
+                door = GameObject.Find("OrangeDoor");
+                break;
+        }
+
+        if (key != null)
+        {
+            NetworkObject keyNetObj = key.GetComponent<NetworkObject>();
+            if (keyNetObj != null)
+            {
+                keyNetObj.Despawn();
+            }
+            else
+            {
+                Destroy(key);
+            }
+        }
+
+        if (door != null)
+        {
+            NetworkObject doorNetObj = door.GetComponent<NetworkObject>();
+            if (doorNetObj != null)
+            {
+                doorNetObj.Despawn();
+            }
+            else
+            {
+                Destroy(door);
+            }
+        }
     }
 }
