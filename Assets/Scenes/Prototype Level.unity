@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 14518505}
   - component: {fileID: 14518504}
   - component: {fileID: 14518503}
+  - component: {fileID: 14518506}
   m_Layer: 0
   m_Name: wall (29)
   m_TagString: Untagged
@@ -231,6 +232,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14518501}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &14518506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14518501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &107115721
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +291,7 @@ GameObject:
   - component: {fileID: 145149417}
   - component: {fileID: 145149416}
   - component: {fileID: 145149415}
+  - component: {fileID: 145149418}
   m_Layer: 0
   m_Name: wall (11)
   m_TagString: Untagged
@@ -378,6 +392,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145149413}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &145149418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145149413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &181354846
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +416,7 @@ GameObject:
   - component: {fileID: 181354850}
   - component: {fileID: 181354849}
   - component: {fileID: 181354848}
+  - component: {fileID: 181354851}
   m_Layer: 0
   m_Name: wall (39)
   m_TagString: Untagged
@@ -490,6 +517,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181354846}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &181354851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181354846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &194502048
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +541,7 @@ GameObject:
   - component: {fileID: 194502052}
   - component: {fileID: 194502051}
   - component: {fileID: 194502050}
+  - component: {fileID: 194502053}
   m_Layer: 0
   m_Name: wall (16)
   m_TagString: Untagged
@@ -602,6 +642,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194502048}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &194502053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194502048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &225106844
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +666,7 @@ GameObject:
   - component: {fileID: 225106848}
   - component: {fileID: 225106847}
   - component: {fileID: 225106846}
+  - component: {fileID: 225106849}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -714,6 +767,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225106844}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &225106849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225106844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &239595910
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +791,7 @@ GameObject:
   - component: {fileID: 239595914}
   - component: {fileID: 239595913}
   - component: {fileID: 239595912}
+  - component: {fileID: 239595915}
   m_Layer: 0
   m_Name: wall (20)
   m_TagString: Untagged
@@ -826,6 +892,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239595910}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &239595915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239595910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &257114381
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +916,7 @@ GameObject:
   - component: {fileID: 257114385}
   - component: {fileID: 257114384}
   - component: {fileID: 257114383}
+  - component: {fileID: 257114386}
   m_Layer: 0
   m_Name: wall (10)
   m_TagString: Untagged
@@ -938,6 +1017,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257114381}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &257114386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257114381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &277029290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1153,7 @@ GameObject:
   - component: {fileID: 277380908}
   - component: {fileID: 277380907}
   - component: {fileID: 277380906}
+  - component: {fileID: 277380909}
   m_Layer: 0
   m_Name: wall (33)
   m_TagString: Untagged
@@ -1162,6 +1254,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277380904}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &277380909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277380904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &300951086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1389,10 @@ GameObject:
   - component: {fileID: 316179916}
   - component: {fileID: 316179915}
   - component: {fileID: 316179914}
+  - component: {fileID: 316179919}
+  - component: {fileID: 316179917}
   - component: {fileID: 316179913}
+  - component: {fileID: 316179918}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -1389,6 +1496,99 @@ Transform:
   - {fileID: 277029291}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316179917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316179912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 1009975612
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &316179918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316179912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkTransform
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 0
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0
+--- !u!114 &316179919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316179912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f700f4f362edac544ae80af8c5abcfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterController
+  ShowTopMostFoldoutHeaderGroup: 1
+  astar: {fileID: 0}
+  player: {fileID: 0}
+  detectionRange: 15
+  playerViewAngle: 60
+  repathInterval: 0.5
+  moveSpeed: 4
+  rotateSpeed: 6
+  reachDistance: 0.5
 --- !u!1 &317541156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1601,7 @@ GameObject:
   - component: {fileID: 317541160}
   - component: {fileID: 317541159}
   - component: {fileID: 317541158}
+  - component: {fileID: 317541161}
   m_Layer: 0
   m_Name: wall (12)
   m_TagString: Untagged
@@ -1501,6 +1702,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317541156}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &317541161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317541156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1863,7 @@ GameObject:
   - component: {fileID: 348745676}
   - component: {fileID: 348745675}
   - component: {fileID: 348745674}
+  - component: {fileID: 348745677}
   m_Layer: 0
   m_Name: wall (4)
   m_TagString: Untagged
@@ -1750,6 +1964,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348745672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &348745677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348745672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &371835646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1990,7 @@ GameObject:
   - component: {fileID: 371835647}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1877,6 +2103,7 @@ GameObject:
   - component: {fileID: 382106498}
   - component: {fileID: 382106497}
   - component: {fileID: 382106496}
+  - component: {fileID: 382106499}
   m_Layer: 0
   m_Name: OrangeDoor
   m_TagString: Untagged
@@ -1977,6 +2204,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382106494}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &382106499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382106494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &402572246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +2228,7 @@ GameObject:
   - component: {fileID: 402572250}
   - component: {fileID: 402572249}
   - component: {fileID: 402572248}
+  - component: {fileID: 402572251}
   m_Layer: 0
   m_Name: wall (32)
   m_TagString: Untagged
@@ -2089,6 +2329,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402572246}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &402572251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402572246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,6 +2480,7 @@ GameObject:
   - component: {fileID: 467745328}
   - component: {fileID: 467745327}
   - component: {fileID: 467745326}
+  - component: {fileID: 467745329}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2328,6 +2581,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467745324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &467745329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467745324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d336a117a74b7bd4a954e9be9525c0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Floor
+  movementCostMultiplier: 1
 --- !u!1 &554993724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,6 +2606,7 @@ GameObject:
   - component: {fileID: 554993728}
   - component: {fileID: 554993727}
   - component: {fileID: 554993726}
+  - component: {fileID: 554993729}
   m_Layer: 0
   m_Name: wall (31)
   m_TagString: Untagged
@@ -2440,6 +2707,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554993724}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &554993729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554993724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+--- !u!1 &657644280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657644284}
+  - component: {fileID: 657644283}
+  - component: {fileID: 657644282}
+  - component: {fileID: 657644281}
+  m_Layer: 0
+  m_Name: Pathfinding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657644281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657644280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0186d8a9f7f3f4197aa4c2a9ec0a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PathVisualizer
+  line: {fileID: 0}
+  lineColor: {r: 0, g: 0, b: 0, a: 0}
+  lineWidth: 0
+  updateEveryFrame: 1
+--- !u!114 &657644282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657644280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42c0b76b289a604684b46e655b90e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grid3D
+  areaCenter: {x: 0, y: 1, z: -20}
+  areaSizeXYZ: {x: 180, y: 2, z: 280}
+  cellSize: 5
+  drawGizmos: 1
+  lineColor: {r: 0, g: 0.6, b: 1, a: 0.6}
+--- !u!114 &657644283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657644280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc99182335117d64ebb41ed0bcae442f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AStar3D
+  grid: {fileID: 657644282}
+  start: {fileID: 0}
+  target: {fileID: 0}
+  preventDiagonalCornerCutting: 1
+  showVisuals: 1
+  openSetColor: {r: 0, g: 0, b: 0, a: 0}
+  closedSetColor: {r: 0, g: 0, b: 0, a: 0}
+  finalPathColor: {r: 0, g: 0, b: 0, a: 0}
+  startCellColor: {r: 0, g: 0, b: 0, a: 0}
+  goalCellColor: {r: 0, g: 0, b: 0, a: 0}
+  maxCellFloorDistance: 0.6
+  minFloorUpDot: 0.65
+  cellGap: 0.02
+  courutineSpeed: 0.05
+--- !u!4 &657644284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657644280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701928122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,6 +2824,7 @@ GameObject:
   - component: {fileID: 701928126}
   - component: {fileID: 701928125}
   - component: {fileID: 701928124}
+  - component: {fileID: 701928127}
   m_Layer: 0
   m_Name: wall (1)
   m_TagString: Untagged
@@ -2552,6 +2925,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701928122}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &701928127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701928122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &775540650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2949,7 @@ GameObject:
   - component: {fileID: 775540654}
   - component: {fileID: 775540653}
   - component: {fileID: 775540652}
+  - component: {fileID: 775540655}
   m_Layer: 0
   m_Name: wall (6)
   m_TagString: Untagged
@@ -2664,6 +3050,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775540650}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &775540655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775540650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &788989968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,6 +3074,7 @@ GameObject:
   - component: {fileID: 788989972}
   - component: {fileID: 788989971}
   - component: {fileID: 788989970}
+  - component: {fileID: 788989973}
   m_Layer: 0
   m_Name: wall (36)
   m_TagString: Untagged
@@ -2776,6 +3175,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788989968}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &788989973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788989968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +3248,7 @@ GameObject:
   - component: {fileID: 1104145282}
   - component: {fileID: 1104145281}
   - component: {fileID: 1104145280}
+  - component: {fileID: 1104145283}
   m_Layer: 0
   m_Name: wall (14)
   m_TagString: Untagged
@@ -2937,6 +3349,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104145278}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1104145283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104145278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1109875580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,6 +3373,7 @@ GameObject:
   - component: {fileID: 1109875584}
   - component: {fileID: 1109875583}
   - component: {fileID: 1109875582}
+  - component: {fileID: 1109875585}
   m_Layer: 0
   m_Name: wall (40)
   m_TagString: Untagged
@@ -3049,6 +3474,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109875580}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1109875585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109875580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1120923062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3498,7 @@ GameObject:
   - component: {fileID: 1120923066}
   - component: {fileID: 1120923065}
   - component: {fileID: 1120923064}
+  - component: {fileID: 1120923067}
   m_Layer: 0
   m_Name: wall (19)
   m_TagString: Untagged
@@ -3161,6 +3599,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120923062}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1120923067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120923062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1126761813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +3623,7 @@ GameObject:
   - component: {fileID: 1126761817}
   - component: {fileID: 1126761816}
   - component: {fileID: 1126761815}
+  - component: {fileID: 1126761818}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -3273,6 +3724,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126761813}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1126761818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126761813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1141488202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,6 +3748,7 @@ GameObject:
   - component: {fileID: 1141488206}
   - component: {fileID: 1141488205}
   - component: {fileID: 1141488204}
+  - component: {fileID: 1141488207}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -3385,6 +3849,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141488202}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1141488207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141488202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1187946900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,6 +3873,7 @@ GameObject:
   - component: {fileID: 1187946904}
   - component: {fileID: 1187946903}
   - component: {fileID: 1187946902}
+  - component: {fileID: 1187946905}
   m_Layer: 0
   m_Name: wall (34)
   m_TagString: Untagged
@@ -3497,6 +3974,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187946900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1187946905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187946900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1214145181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,6 +3998,7 @@ GameObject:
   - component: {fileID: 1214145185}
   - component: {fileID: 1214145184}
   - component: {fileID: 1214145183}
+  - component: {fileID: 1214145186}
   m_Layer: 0
   m_Name: wall (23)
   m_TagString: Untagged
@@ -3609,6 +4099,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214145181}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1214145186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214145181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1223582197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +4123,7 @@ GameObject:
   - component: {fileID: 1223582201}
   - component: {fileID: 1223582200}
   - component: {fileID: 1223582199}
+  - component: {fileID: 1223582202}
   m_Layer: 0
   m_Name: wall (13)
   m_TagString: Untagged
@@ -3721,6 +4224,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223582197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1223582202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223582197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1238368130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +4248,7 @@ GameObject:
   - component: {fileID: 1238368134}
   - component: {fileID: 1238368133}
   - component: {fileID: 1238368132}
+  - component: {fileID: 1238368135}
   m_Layer: 0
   m_Name: wall (25)
   m_TagString: Untagged
@@ -3833,6 +4349,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238368130}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1238368135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238368130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1240620213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,6 +4373,7 @@ GameObject:
   - component: {fileID: 1240620217}
   - component: {fileID: 1240620216}
   - component: {fileID: 1240620215}
+  - component: {fileID: 1240620218}
   m_Layer: 0
   m_Name: wall (30)
   m_TagString: Untagged
@@ -3945,6 +4474,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240620213}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1240620218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240620213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1249844964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,6 +4498,7 @@ GameObject:
   - component: {fileID: 1249844968}
   - component: {fileID: 1249844967}
   - component: {fileID: 1249844966}
+  - component: {fileID: 1249844969}
   m_Layer: 0
   m_Name: wall (37)
   m_TagString: Untagged
@@ -4057,6 +4599,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249844964}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1249844969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249844964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1294726145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4069,6 +4623,7 @@ GameObject:
   - component: {fileID: 1294726149}
   - component: {fileID: 1294726148}
   - component: {fileID: 1294726147}
+  - component: {fileID: 1294726150}
   m_Layer: 0
   m_Name: PurpleDoor
   m_TagString: Untagged
@@ -4169,6 +4724,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294726145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1294726150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294726145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1337477576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,6 +4748,7 @@ GameObject:
   - component: {fileID: 1337477580}
   - component: {fileID: 1337477579}
   - component: {fileID: 1337477578}
+  - component: {fileID: 1337477581}
   m_Layer: 0
   m_Name: wall (2)
   m_TagString: Untagged
@@ -4281,6 +4849,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337477576}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1337477581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337477576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1354643094
 GameObject:
   m_ObjectHideFlags: 0
@@ -4293,6 +4873,7 @@ GameObject:
   - component: {fileID: 1354643098}
   - component: {fileID: 1354643097}
   - component: {fileID: 1354643096}
+  - component: {fileID: 1354643099}
   m_Layer: 0
   m_Name: wall (38)
   m_TagString: Untagged
@@ -4393,6 +4974,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354643094}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1354643099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354643094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1392866825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,6 +5030,7 @@ GameObject:
   - component: {fileID: 1401651551}
   - component: {fileID: 1401651550}
   - component: {fileID: 1401651549}
+  - component: {fileID: 1401651552}
   m_Layer: 0
   m_Name: wall (24)
   m_TagString: Untagged
@@ -4537,6 +5131,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401651547}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1401651552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401651547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1408247411
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,6 +5155,7 @@ GameObject:
   - component: {fileID: 1408247415}
   - component: {fileID: 1408247414}
   - component: {fileID: 1408247413}
+  - component: {fileID: 1408247416}
   m_Layer: 0
   m_Name: wall (7)
   m_TagString: Untagged
@@ -4649,6 +5256,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408247411}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1408247416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408247411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1453276725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,6 +5280,7 @@ GameObject:
   - component: {fileID: 1453276729}
   - component: {fileID: 1453276728}
   - component: {fileID: 1453276727}
+  - component: {fileID: 1453276730}
   m_Layer: 0
   m_Name: wall (28)
   m_TagString: Untagged
@@ -4761,6 +5381,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453276725}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1453276730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453276725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1468106082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4773,6 +5405,7 @@ GameObject:
   - component: {fileID: 1468106086}
   - component: {fileID: 1468106085}
   - component: {fileID: 1468106084}
+  - component: {fileID: 1468106087}
   m_Layer: 0
   m_Name: wall (21)
   m_TagString: Untagged
@@ -4873,6 +5506,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468106082}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1468106087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468106082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1487179180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,6 +5530,7 @@ GameObject:
   - component: {fileID: 1487179184}
   - component: {fileID: 1487179183}
   - component: {fileID: 1487179182}
+  - component: {fileID: 1487179185}
   m_Layer: 0
   m_Name: wall (35)
   m_TagString: Untagged
@@ -4985,6 +5631,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487179180}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1487179185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487179180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1492780369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4997,6 +5655,7 @@ GameObject:
   - component: {fileID: 1492780373}
   - component: {fileID: 1492780372}
   - component: {fileID: 1492780371}
+  - component: {fileID: 1492780374}
   m_Layer: 0
   m_Name: BlueDoor
   m_TagString: Untagged
@@ -5097,6 +5756,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492780369}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1492780374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492780369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1507754492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,6 +5815,7 @@ GameObject:
   - component: {fileID: 1521987904}
   - component: {fileID: 1521987903}
   - component: {fileID: 1521987902}
+  - component: {fileID: 1521987905}
   m_Layer: 0
   m_Name: wall (17)
   m_TagString: Untagged
@@ -5244,6 +5916,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521987900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1521987905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521987900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1575337561
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,6 +5940,7 @@ GameObject:
   - component: {fileID: 1575337565}
   - component: {fileID: 1575337564}
   - component: {fileID: 1575337563}
+  - component: {fileID: 1575337566}
   m_Layer: 0
   m_Name: wall (18)
   m_TagString: Untagged
@@ -5356,6 +6041,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575337561}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1575337566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575337561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1644439511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +6138,7 @@ GameObject:
   - component: {fileID: 1644832334}
   - component: {fileID: 1644832333}
   - component: {fileID: 1644832332}
+  - component: {fileID: 1644832335}
   m_Layer: 0
   m_Name: wall (22)
   m_TagString: Untagged
@@ -5541,6 +6239,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644832330}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1644832335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644832330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1703827271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,6 +6263,7 @@ GameObject:
   - component: {fileID: 1703827275}
   - component: {fileID: 1703827274}
   - component: {fileID: 1703827273}
+  - component: {fileID: 1703827276}
   m_Layer: 0
   m_Name: wall (3)
   m_TagString: Untagged
@@ -5653,6 +6364,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703827271}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1703827276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703827271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1708545889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,6 +6500,7 @@ GameObject:
   - component: {fileID: 1720585756}
   - component: {fileID: 1720585755}
   - component: {fileID: 1720585754}
+  - component: {fileID: 1720585757}
   m_Layer: 0
   m_Name: wall (5)
   m_TagString: Untagged
@@ -5877,6 +6601,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720585752}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1720585757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720585752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1723829721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,6 +6625,7 @@ GameObject:
   - component: {fileID: 1723829725}
   - component: {fileID: 1723829724}
   - component: {fileID: 1723829723}
+  - component: {fileID: 1723829726}
   m_Layer: 0
   m_Name: wall (15)
   m_TagString: Untagged
@@ -5989,6 +6726,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723829721}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1723829726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723829721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1773986902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,6 +6750,7 @@ GameObject:
   - component: {fileID: 1773986906}
   - component: {fileID: 1773986905}
   - component: {fileID: 1773986904}
+  - component: {fileID: 1773986907}
   m_Layer: 0
   m_Name: wall (9)
   m_TagString: Untagged
@@ -6101,6 +6851,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773986902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1773986907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773986902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1936091936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,6 +6875,7 @@ GameObject:
   - component: {fileID: 1936091940}
   - component: {fileID: 1936091939}
   - component: {fileID: 1936091938}
+  - component: {fileID: 1936091941}
   m_Layer: 0
   m_Name: wall (27)
   m_TagString: Untagged
@@ -6213,6 +6976,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936091936}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1936091941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936091936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1971764947
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,6 +7000,7 @@ GameObject:
   - component: {fileID: 1971764951}
   - component: {fileID: 1971764950}
   - component: {fileID: 1971764949}
+  - component: {fileID: 1971764952}
   m_Layer: 0
   m_Name: GreenDoor
   m_TagString: Untagged
@@ -6325,6 +7101,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971764947}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1971764952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971764947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &1973902879
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,6 +7125,7 @@ GameObject:
   - component: {fileID: 1973902883}
   - component: {fileID: 1973902882}
   - component: {fileID: 1973902881}
+  - component: {fileID: 1973902884}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -6437,6 +7226,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973902879}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1973902884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973902879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &2050896720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6449,6 +7250,7 @@ GameObject:
   - component: {fileID: 2050896724}
   - component: {fileID: 2050896723}
   - component: {fileID: 2050896722}
+  - component: {fileID: 2050896725}
   m_Layer: 0
   m_Name: wall (26)
   m_TagString: Untagged
@@ -6549,6 +7351,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050896720}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2050896725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050896720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &2090102511
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,6 +7375,7 @@ GameObject:
   - component: {fileID: 2090102515}
   - component: {fileID: 2090102514}
   - component: {fileID: 2090102513}
+  - component: {fileID: 2090102516}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -6661,6 +7476,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090102511}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2090102516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090102511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110bbe141bae04991fbe493fb632a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6673,3 +7500,4 @@ SceneRoots:
   - {fileID: 316179916}
   - {fileID: 1507754493}
   - {fileID: 1392866826}
+  - {fileID: 657644284}
