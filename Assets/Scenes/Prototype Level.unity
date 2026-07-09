@@ -1389,8 +1389,8 @@ GameObject:
   - component: {fileID: 316179916}
   - component: {fileID: 316179915}
   - component: {fileID: 316179914}
-  - component: {fileID: 316179919}
   - component: {fileID: 316179917}
+  - component: {fileID: 316179919}
   - component: {fileID: 316179913}
   - component: {fileID: 316179918}
   m_Layer: 0
@@ -1581,11 +1581,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterController
   ShowTopMostFoldoutHeaderGroup: 1
-  astar: {fileID: 0}
-  player: {fileID: 0}
+  astar: {fileID: 657644283}
+  player: {fileID: 371835650}
   detectionRange: 15
   playerViewAngle: 60
-  repathInterval: 0.5
+  repathInterval: 1
   moveSpeed: 4
   rotateSpeed: 6
   reachDistance: 0.5
