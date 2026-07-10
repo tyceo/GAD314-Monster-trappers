@@ -18,7 +18,7 @@ public class MonsterController : NetworkBehaviour
     private int waypointIndex;
     private float repathTimer;
 
-    private void Start()
+    public override void OnNetworkSpawn()
     {
         if (!IsServer) { enabled = false; return; }
         if (!astar) astar = FindFirstObjectByType<AStar3D>();
