@@ -2768,7 +2768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Grid3D
   areaCenter: {x: 0, y: 1, z: -20}
   areaSizeXYZ: {x: 180, y: 2, z: 280}
-  cellSize: 5
+  cellSize: 2
   drawGizmos: 1
   lineColor: {r: 0, g: 0.6, b: 1, a: 0.6}
 --- !u!114 &657644283
