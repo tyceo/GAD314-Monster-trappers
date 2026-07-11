@@ -20,23 +20,23 @@ public class MonsterController : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        Debug.Log($"OnNetworkSpawn fired. IsServer={IsServer}");
         if (!IsServer) { enabled = false; return; }
         if (!astar) astar = FindFirstObjectByType<AStar3D>();
-        if (!player)
-        {
-            GameObject found = GameObject.FindGameObjectWithTag("Player");
-            if (found) player = found.transform;
-        }
+        GameObject found = GameObject.FindGameObjectWithTag("Player");
+        if (found) player = found.transform;
     }
 
     private void Update()
     {
+        GameObject found = GameObject.FindGameObjectWithTag("Player");
+        if (found) player = found.transform;
         if (!IsServer || player == null || astar == null) return;
 
         bool inRange = IsPlayerInRange();
         bool playerLooking = inRange && IsPlayerLookingAtMonster();
         bool isChasing = inRange && !playerLooking;
-
+        Debug.Log($"inRange={inRange} playerLooking={playerLooking} isChasing={isChasing} timer={repathTimer}"); 
         if (isChasing)
         {
             repathTimer -= Time.deltaTime;
@@ -93,6 +93,7 @@ public class MonsterController : NetworkBehaviour
         astar.RunAStarImmediately();
         currentPath = astar.GetWorldPath();
         waypointIndex = 0;
+        Debug.Log($"Repath: path point count = {currentPath.Count}");
     }
 
     private void FollowPath()
