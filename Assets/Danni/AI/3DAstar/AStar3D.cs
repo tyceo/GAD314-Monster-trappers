@@ -65,7 +65,7 @@ public class AStar3D : MonoBehaviour
 
     #region public functions
 
-    public void RunAStarImmediately()
+    /*public void RunAStarImmediately()
     {
         if (!Application.isPlaying) return; // added because running in editor was glitching my pc
         StopCoroutineIfRunning();
@@ -93,6 +93,40 @@ public class AStar3D : MonoBehaviour
         startCell = new Vector3Int(startIndexX, startIndexY, startIndexZ);
         goalCell = new Vector3Int(goalIndexX, goalIndexY, goalIndexZ);
 
+        InternallyRunAStarImmediately();
+    }*/
+    
+    public void RunAStarImmediately()
+    {
+        if (!Application.isPlaying) return;
+        StopCoroutineIfRunning();
+
+        pathCellCoordinates.Clear();
+        openSetCellCoordinates.Clear();
+        closedSetCellCoordinates.Clear();
+        hasSolution = false;
+
+        if (grid == null || start == null || target == null)
+        {
+            Debug.Log($"AStar bail: grid={grid != null} start={start != null} target={target != null}");
+            return;
+        }
+
+        int startIndexX, startIndexY, startIndexZ, goalIndexX, goalIndexY, goalIndexZ;
+
+        bool startConverted = TryConvertWorldToCell(start.position, out startIndexX, out startIndexY, out startIndexZ);
+        bool goalConverted = TryConvertWorldToCell(target.position, out goalIndexX, out goalIndexY, out goalIndexZ);
+        Debug.Log($"startConverted={startConverted} goalConverted={goalConverted}");
+        if (!startConverted || !goalConverted) return;
+
+        bool startWalkable = IsCellWalkable(startIndexX, startIndexY, startIndexZ);
+        bool goalWalkable = IsCellWalkable(goalIndexX, goalIndexY, goalIndexZ);
+        Debug.Log($"start cell=({startIndexX},{startIndexY},{startIndexZ}) walkable={startWalkable} | goal cell=({goalIndexX},{goalIndexY},{goalIndexZ}) walkable={goalWalkable}");
+        if (!startWalkable || !goalWalkable) return;
+
+        startCell = new Vector3Int(startIndexX, startIndexY, startIndexZ);
+        goalCell = new Vector3Int(goalIndexX, goalIndexY, goalIndexZ);
+        Debug.Log($"start cell=({startIndexX},{startIndexY},{startIndexZ}) world={grid.CellCenterWorld(startIndexX, startIndexY, startIndexZ)} walkable={startWalkable} | goal cell=({goalIndexX},{goalIndexY},{goalIndexZ}) world={grid.CellCenterWorld(goalIndexX, goalIndexY, goalIndexZ)} walkable={goalWalkable}");
         InternallyRunAStarImmediately();
     }
 

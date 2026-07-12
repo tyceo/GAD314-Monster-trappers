@@ -29,8 +29,11 @@ public class MonsterController : NetworkBehaviour
 
     private void Update()
     {
-        GameObject found = GameObject.FindGameObjectWithTag("Player");
-        if (found) player = found.transform;
+        if (!player)
+        {
+            GameObject found = GameObject.FindGameObjectWithTag("Player");
+            if (found) player = found.transform;
+        }
         if (!IsServer || player == null || astar == null) return;
 
         bool inRange = IsPlayerInRange();
@@ -39,6 +42,7 @@ public class MonsterController : NetworkBehaviour
         Debug.Log($"inRange={inRange} playerLooking={playerLooking} isChasing={isChasing} timer={repathTimer}"); 
         if (isChasing)
         {
+            if (currentPath == null) Repath();
             repathTimer -= Time.deltaTime;
             if (repathTimer <= 0f)
             {
@@ -88,12 +92,19 @@ public class MonsterController : NetworkBehaviour
 
     private void Repath()
     {
-        astar.start = transform;
-        astar.target = player;
-        astar.RunAStarImmediately();
-        currentPath = astar.GetWorldPath();
-        waypointIndex = 0;
-        Debug.Log($"Repath: path point count = {currentPath.Count}");
+        try
+        {
+            astar.start = transform;
+            astar.target = player;
+            astar.RunAStarImmediately();
+            currentPath = astar.GetWorldPath();
+            waypointIndex = 0;
+            Debug.Log($"Repath called. grid={astar.grid != null} path count={currentPath.Count}");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Repath threw: {e}");
+        }
     }
 
     private void FollowPath()
