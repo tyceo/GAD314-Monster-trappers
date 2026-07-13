@@ -13,36 +13,49 @@ public class MonsterController : NetworkBehaviour
     public float moveSpeed = 4f;
     public float rotateSpeed = 6f;
     public float reachDistance = 0.5f;
+    public float catchDistance = 1f;
 
     private List<Vector3> currentPath;
     private int waypointIndex;
     private float repathTimer;
+    private Vector3 spawnPosition;
+    private Quaternion spawnRotation;
 
     public override void OnNetworkSpawn()
     {
-        Debug.Log($"OnNetworkSpawn fired. IsServer={IsServer}");
+        spawnPosition = transform.position;
+        spawnRotation = transform.rotation;
+
         if (!IsServer) { enabled = false; return; }
         if (!astar) astar = FindFirstObjectByType<AStar3D>();
-        GameObject found = GameObject.FindGameObjectWithTag("Player");
-        if (found) player = found.transform;
     }
 
     private void Update()
     {
+        if (!IsServer) return;
+        if (GameSessionManager.Instance != null && !GameSessionManager.Instance.IsPlaying) return;
+
         if (!player)
         {
             GameObject found = GameObject.FindGameObjectWithTag("Player");
             if (found) player = found.transform;
         }
-        if (!IsServer || player == null || astar == null) return;
+        if (player == null || astar == null) return;
 
-        bool inRange = IsPlayerInRange();
+        float sqrDist = (player.position - transform.position).sqrMagnitude;
+
+        if (sqrDist <= catchDistance * catchDistance)
+        {
+            GameSessionManager.Instance.NotifyPlayerCaught();
+            return;
+        }
+
+        bool inRange = sqrDist <= detectionRange * detectionRange;
         bool playerLooking = inRange && IsPlayerLookingAtMonster();
         bool isChasing = inRange && !playerLooking;
-        Debug.Log($"inRange={inRange} playerLooking={playerLooking} isChasing={isChasing} timer={repathTimer}"); 
+
         if (isChasing)
         {
-            if (currentPath == null) Repath();
             repathTimer -= Time.deltaTime;
             if (repathTimer <= 0f)
             {
@@ -52,12 +65,6 @@ public class MonsterController : NetworkBehaviour
             FollowPath();
             FacePlayer();
         }
-    }
-
-    private bool IsPlayerInRange()
-    {
-        float sqrDist = (player.position - transform.position).sqrMagnitude;
-        return sqrDist <= detectionRange * detectionRange;
     }
 
     private bool IsPlayerLookingAtMonster()
@@ -92,19 +99,12 @@ public class MonsterController : NetworkBehaviour
 
     private void Repath()
     {
-        try
-        {
-            astar.start = transform;
-            astar.target = player;
-            astar.RunAStarImmediately();
-            currentPath = astar.GetWorldPath();
-            waypointIndex = 0;
-            Debug.Log($"Repath called. grid={astar.grid != null} path count={currentPath.Count}");
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError($"Repath threw: {e}");
-        }
+        if (!astar.grid) astar.grid = FindFirstObjectByType<Grid3D>();
+        astar.start = transform;
+        astar.target = player;
+        astar.RunAStarImmediately();
+        currentPath = astar.GetWorldPath();
+        waypointIndex = 0;
     }
 
     private void FollowPath()
@@ -132,5 +132,14 @@ public class MonsterController : NetworkBehaviour
 
         Quaternion targetRot = Quaternion.LookRotation(toPlayer.normalized, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * rotateSpeed);
+    }
+
+    public void ResetToSpawn()
+    {
+        if (!IsServer) return;
+        transform.position = spawnPosition;
+        transform.rotation = spawnRotation;
+        currentPath = null;
+        waypointIndex = 0;
     }
 }
