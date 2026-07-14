@@ -23,24 +23,66 @@ public class MonsterController : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        Debug.Log($"[MonsterController] OnNetworkSpawn called. IsServer: {IsServer}");
+        
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
 
-        if (!IsServer) { enabled = false; return; }
+        if (!IsServer) 
+        { 
+            Debug.Log("[MonsterController] Not server, disabling component");
+            enabled = false; 
+            return; 
+        }
+        
+        Debug.Log("[MonsterController] Running on server, initializing");
+        
         if (!astar) astar = FindFirstObjectByType<AStar3D>();
+        
+        Debug.Log($"[MonsterController] AStar found: {astar != null}");
     }
 
     private void Update()
     {
-        if (!IsServer) return;
-        if (GameSessionManager.Instance != null && !GameSessionManager.Instance.IsPlaying) return;
+        if (!IsServer)
+        {
+            Debug.LogWarning("[MonsterController] Update called but not server!");
+            return;
+        }
+        
+        if (GameSessionManager.Instance != null && !GameSessionManager.Instance.IsPlaying)
+        {
+            Debug.LogWarning("[MonsterController] Game session not playing yet");
+            return;
+        }
+        
+        if (GameSessionManager.Instance == null)
+        {
+            Debug.LogWarning("[MonsterController] GameSessionManager.Instance is null!");
+            return;
+        }
+
+        Debug.Log("[MonsterController] Update running - looking for player");
 
         if (!player)
         {
             GameObject found = GameObject.FindGameObjectWithTag("Player");
-            if (found) player = found.transform;
+            if (found)
+            {
+                player = found.transform;
+                Debug.Log($"[MonsterController] Found player: {player.name}");
+            }
+            else
+            {
+                Debug.LogWarning("[MonsterController] No GameObject with 'Player' tag found!");
+            }
         }
-        if (player == null || astar == null) return;
+        if (player == null || astar == null)
+        {
+            if (player == null) Debug.LogWarning("[MonsterController] Player is null");
+            if (astar == null) Debug.LogWarning("[MonsterController] AStar is null");
+            return;
+        }
 
         float sqrDist = (player.position - transform.position).sqrMagnitude;
 
@@ -109,15 +151,28 @@ public class MonsterController : NetworkBehaviour
 
     private void FollowPath()
     {
-        if (currentPath == null || currentPath.Count == 0 || waypointIndex >= currentPath.Count) return;
+        if (currentPath == null || currentPath.Count == 0)
+        {
+            Debug.LogWarning("[MonsterController] No path to follow!");
+            return;
+        }
+        
+        if (waypointIndex >= currentPath.Count)
+        {
+            Debug.Log("[MonsterController] Reached end of path");
+            return;
+        }
 
         Vector3 targetPos = currentPath[waypointIndex];
         targetPos.y = transform.position.y;
         Vector3 toTarget = targetPos - transform.position;
 
+        Debug.Log($"[MonsterController] Moving to waypoint {waypointIndex}/{currentPath.Count - 1}, distance: {toTarget.magnitude:F2}");
+
         if (toTarget.magnitude < reachDistance)
         {
             waypointIndex++;
+            Debug.Log($"[MonsterController] Reached waypoint, moving to next: {waypointIndex}");
             return;
         }
 

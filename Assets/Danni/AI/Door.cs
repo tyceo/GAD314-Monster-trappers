@@ -11,6 +11,7 @@ public class Door : MonoBehaviour
 
     public void SetOpen(bool isOpen)
     {
-        if (doorCollider) doorCollider.enabled = !isOpen;
+        //if (doorCollider) doorCollider.enabled = !isOpen;
+        gameObject.SetActive(!isOpen);
     }
 }

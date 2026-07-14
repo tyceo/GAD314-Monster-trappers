@@ -79,6 +79,13 @@ public class GameSessionManager : NetworkBehaviour
         blueDoor.SetOpen(blueOpen.Value);
         orangeDoor.SetOpen(orangeOpen.Value);
         purpleDoor.SetOpen(purpleOpen.Value);
+        
+        // Start the game immediately when host spawns this object
+        if (IsServer)
+        {
+            sessionState.Value = SessionState.Playing;
+            Debug.Log("[GameSessionManager] Host started - game is now playing!");
+        }
     }
 
     private void RefreshConnectionUI()
