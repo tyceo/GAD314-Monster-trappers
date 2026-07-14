@@ -1,5 +1,6 @@
 using Unity.Netcode;
 using UnityEngine;
+using System.Collections;
 
 public enum DoorColor { Green, Blue, Orange, Purple }
 public enum SessionState { Connecting, Playing, Won, Lost }
@@ -49,6 +50,12 @@ public class GameSessionManager : NetworkBehaviour
     private void Awake()
     {
         Instance = this;
+        RenderSettings.fog = false;
+    }
+
+    public void StopGameButton()
+    {
+        Application.Quit();
     }
 
     public override void OnNetworkSpawn()
@@ -103,10 +110,23 @@ public class GameSessionManager : NetworkBehaviour
         if (!winLoseUIController) return;
         switch (sessionState.Value)
         {
-            case SessionState.Won: winLoseUIController.ShowWin(); break;
-            case SessionState.Lost: winLoseUIController.ShowLose(); break;
+            case SessionState.Won: 
+                winLoseUIController.ShowWin();
+                if (IsServer) UnlockCursorClientRpc();
+                break;
+            case SessionState.Lost: 
+                winLoseUIController.ShowLose();
+                if (IsServer) UnlockCursorClientRpc();
+                break;
             default: winLoseUIController.HideAll(); break;
         }
+    }
+
+    [ClientRpc]
+    private void UnlockCursorClientRpc()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     [ServerRpc(RequireOwnership = false)]

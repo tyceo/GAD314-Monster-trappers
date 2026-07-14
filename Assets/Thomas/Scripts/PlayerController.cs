@@ -285,6 +285,12 @@ public class PlayerController : NetworkBehaviour
         jumpAction.Enable();
     }
 
+    public void GameEnded()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     public override void OnNetworkDespawn()
     {
         moveAction?.Disable();
