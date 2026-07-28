@@ -361,7 +361,7 @@ MonoBehaviour:
   moveSpeed: 14
   jumpForce: 3
   gravity: -20.28
-  mouseSensitivity: 0.75
+  mouseSensitivity: 1.25
   cameraHolder: {fileID: 1138164182504828704}
   respawnPosition: {x: 3.35, y: 1.83, z: -4.38}
 --- !u!143 &9089218793912173069
