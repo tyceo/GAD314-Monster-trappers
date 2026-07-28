@@ -56,14 +56,14 @@ Material:
     - Vector1_96113905: 100
     - Vector1_DF019693: 0.5
     - WOBBLE: 0
-    - _DistortionStrength: 0.03
+    - _DistortionStrength: 0.01
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScanlineHeight: 10
     - _ScanlineStrength: 0.001
     - _StaticStrength: 0.01
     m_Colors:
-    - _CRTWarpStrength: {r: 6.96, g: 2.5, b: 0, a: 0}
+    - _CRTWarpStrength: {r: 1.82, g: 2.63, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6657729383248154032
