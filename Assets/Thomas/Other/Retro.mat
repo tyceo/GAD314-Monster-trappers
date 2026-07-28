@@ -63,7 +63,7 @@ Material:
     - _ScanlineStrength: 0.001
     - _StaticStrength: 0.01
     m_Colors:
-    - _CRTWarpStrength: {r: 0.69, g: 0.47, b: 0, a: 0}
+    - _CRTWarpStrength: {r: 6.96, g: 2.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6657729383248154032
