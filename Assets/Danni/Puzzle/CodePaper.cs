@@ -11,7 +11,9 @@ public class CodePaper : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         NetworkObject netObj = other.GetComponent<NetworkObject>();
-        if (netObj != null && !netObj.IsOwner) return;
+        if (netObj == null || !netObj.IsOwner) return;
+        if (NetworkManager.Singleton.LocalClient == null ||
+            NetworkManager.Singleton.LocalClient.PlayerObject != netObj) return;
 
         CodePopup.Instance.Show(color, code);
     }

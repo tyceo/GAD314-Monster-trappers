@@ -2,10 +2,14 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
+public enum MonsterFollowMode { LookAwayFollow, LookAtFollow }
 public class MonsterController : NetworkBehaviour
 {
     public AStar3D astar;
     public Transform player;
+    
+    [Header("Follow Behavior")]
+    public MonsterFollowMode followMode = MonsterFollowMode.LookAwayFollow;
 
     public float detectionRange = 15f;
     public float playerViewAngle = 60f;
@@ -30,39 +34,28 @@ public class MonsterController : NetworkBehaviour
 
         if (!IsServer) 
         { 
-            Debug.Log("[MonsterController] Not server, disabling component");
             enabled = false; 
             return; 
         }
-        
-        Debug.Log("[MonsterController] Running on server, initializing");
-        
         if (!astar) astar = FindFirstObjectByType<AStar3D>();
-        
-        Debug.Log($"[MonsterController] AStar found: {astar != null}");
     }
 
     private void Update()
     {
         if (!IsServer)
         {
-            Debug.LogWarning("[MonsterController] Update called but not server!");
             return;
         }
         
         if (GameSessionManager.Instance != null && !GameSessionManager.Instance.IsPlaying)
         {
-            Debug.LogWarning("[MonsterController] Game session not playing yet");
             return;
         }
         
         if (GameSessionManager.Instance == null)
         {
-            Debug.LogWarning("[MonsterController] GameSessionManager.Instance is null!");
             return;
         }
-
-        Debug.Log("[MonsterController] Update running - looking for player");
 
         if (!player)
         {
@@ -70,19 +63,10 @@ public class MonsterController : NetworkBehaviour
             if (found)
             {
                 player = found.transform;
-                Debug.Log($"[MonsterController] Found player: {player.name}");
-            }
-            else
-            {
-                Debug.LogWarning("[MonsterController] No GameObject with 'Player' tag found!");
             }
         }
         if (player == null || astar == null)
-        {
-            if (player == null) Debug.LogWarning("[MonsterController] Player is null");
-            if (astar == null) Debug.LogWarning("[MonsterController] AStar is null");
             return;
-        }
 
         float sqrDist = (player.position - transform.position).sqrMagnitude;
 
@@ -94,7 +78,11 @@ public class MonsterController : NetworkBehaviour
 
         bool inRange = sqrDist <= detectionRange * detectionRange;
         bool playerLooking = inRange && IsPlayerLookingAtMonster();
-        bool isChasing = inRange && !playerLooking;
+
+        // chase condition now depends on followMode
+        bool isChasing = followMode == MonsterFollowMode.LookAwayFollow
+            ? inRange && !playerLooking
+            : inRange && playerLooking;
 
         if (isChasing)
         {
@@ -153,13 +141,13 @@ public class MonsterController : NetworkBehaviour
     {
         if (currentPath == null || currentPath.Count == 0)
         {
-            Debug.LogWarning("[MonsterController] No path to follow!");
+            // Debug.LogWarning("[MonsterController] no path to follow!");
             return;
         }
         
         if (waypointIndex >= currentPath.Count)
         {
-            Debug.Log("[MonsterController] Reached end of path");
+            // Debug.Log("[MonsterController] reached end of path");
             return;
         }
 
@@ -167,12 +155,11 @@ public class MonsterController : NetworkBehaviour
         targetPos.y = transform.position.y;
         Vector3 toTarget = targetPos - transform.position;
 
-        Debug.Log($"[MonsterController] Moving to waypoint {waypointIndex}/{currentPath.Count - 1}, distance: {toTarget.magnitude:F2}");
-
+        
         if (toTarget.magnitude < reachDistance)
         {
             waypointIndex++;
-            Debug.Log($"[MonsterController] Reached waypoint, moving to next: {waypointIndex}");
+            // Debug.Log($"reached waypoint, moving to next: {waypointIndex}");
             return;
         }
 

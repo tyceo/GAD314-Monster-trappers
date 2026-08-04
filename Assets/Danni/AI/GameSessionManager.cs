@@ -36,6 +36,10 @@ public class GameSessionManager : NetworkBehaviour
     private const string BlueCode = "3652";
     private const string OrangeCode = "8410";
     private const string PurpleCode = "5297";
+    
+    private bool IsLocalController =>
+        NetworkManager.Singleton.LocalClient != null &&
+        NetworkManager.Singleton.LocalClient.PlayerObject == null;
 
     [Header("Refs")]
     public MonsterController monster;
@@ -76,19 +80,19 @@ public class GameSessionManager : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        explorerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
+          explorerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         controllerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         sessionState.OnValueChanged += (_, _) => RefreshSessionUI();
         
-        greenActivated.OnValueChanged += (_, v) => greenCodePanel.SetVisible(v);
-        blueActivated.OnValueChanged += (_, v) => blueCodePanel.SetVisible(v);
-        orangeActivated.OnValueChanged += (_, v) => orangeCodePanel.SetVisible(v);
-        purpleActivated.OnValueChanged += (_, v) => purpleCodePanel.SetVisible(v);
+        greenActivated.OnValueChanged += (_, v) => { if (IsLocalController) greenCodePanel.SetVisible(v); };
+        blueActivated.OnValueChanged += (_, v) => { if (IsLocalController) blueCodePanel.SetVisible(v); };
+        orangeActivated.OnValueChanged += (_, v) => { if (IsLocalController) orangeCodePanel.SetVisible(v); };
+        purpleActivated.OnValueChanged += (_, v) => { if (IsLocalController) purpleCodePanel.SetVisible(v); };
         
-        greenCodeVerified.OnValueChanged += (_, v) => { greenButton.SetActivated(v); if (v) greenCodePanel.Hide(); };
-        blueCodeVerified.OnValueChanged += (_, v) => { blueButton.SetActivated(v); if (v) blueCodePanel.Hide(); };
-        orangeCodeVerified.OnValueChanged += (_, v) => { orangeButton.SetActivated(v); if (v) orangeCodePanel.Hide(); };
-        purpleCodeVerified.OnValueChanged += (_, v) => { purpleButton.SetActivated(v); if (v) purpleCodePanel.Hide(); };
+        greenCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { greenButton.SetActivated(v); if (v) greenCodePanel.Hide(); } };
+        blueCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { blueButton.SetActivated(v); if (v) blueCodePanel.Hide(); } };
+        orangeCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { orangeButton.SetActivated(v); if (v) orangeCodePanel.Hide(); } };
+        purpleCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { purpleButton.SetActivated(v); if (v) purpleCodePanel.Hide(); } };
 
         greenOpen.OnValueChanged += (_, v) => greenDoor.SetOpen(v);
         blueOpen.OnValueChanged += (_, v) => blueDoor.SetOpen(v);
@@ -97,16 +101,19 @@ public class GameSessionManager : NetworkBehaviour
 
         RefreshConnectionUI();
         RefreshSessionUI();
-        
-        greenCodePanel.SetVisible(greenActivated.Value);
-        blueCodePanel.SetVisible(blueActivated.Value);
-        orangeCodePanel.SetVisible(orangeActivated.Value);
-        purpleCodePanel.SetVisible(purpleActivated.Value);
 
-        greenButton.SetActivated(greenCodeVerified.Value);
-        blueButton.SetActivated(blueCodeVerified.Value);
-        orangeButton.SetActivated(orangeCodeVerified.Value);
-        purpleButton.SetActivated(purpleCodeVerified.Value);
+        if (IsLocalController)
+        {
+            greenCodePanel.SetVisible(greenActivated.Value);
+            blueCodePanel.SetVisible(blueActivated.Value);
+            orangeCodePanel.SetVisible(orangeActivated.Value);
+            purpleCodePanel.SetVisible(purpleActivated.Value);
+
+            greenButton.SetActivated(greenCodeVerified.Value);
+            blueButton.SetActivated(blueCodeVerified.Value);
+            orangeButton.SetActivated(orangeCodeVerified.Value);
+            purpleButton.SetActivated(purpleCodeVerified.Value);
+        }
 
         greenDoor.SetOpen(greenOpen.Value);
         blueDoor.SetOpen(blueOpen.Value);
