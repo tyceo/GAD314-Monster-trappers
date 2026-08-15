@@ -4,6 +4,7 @@ using System.Collections;
 
 public enum DoorColor { Green, Blue, Orange, Purple }
 public enum SessionState { Connecting, Playing, Won, Lost }
+public enum MonsterType { BloodDemon, AstralLizard, SludgeDragon, IceWizard }
 
 public class GameSessionManager : NetworkBehaviour
 {
@@ -25,18 +26,13 @@ public class GameSessionManager : NetworkBehaviour
     public ControllerButton blueButton;
     public ControllerButton orangeButton;
     public ControllerButton purpleButton;
-    
-    [Header("Code Panels")]
-    public CodeEntryPanel greenCodePanel;
-    public CodeEntryPanel blueCodePanel;
-    public CodeEntryPanel orangeCodePanel;
-    public CodeEntryPanel purpleCodePanel;
-    
-    private const string GreenCode = "1974";
-    private const string BlueCode = "3652";
-    private const string OrangeCode = "8410";
-    private const string PurpleCode = "5297";
-    
+
+    [Header("Lever Puzzle")]
+    public LeverStation leverStation;
+
+    [Header("Current Monster")]
+    public MonsterType currentMonsterType = MonsterType.BloodDemon;
+
     private bool IsLocalController =>
         NetworkManager.Singleton.LocalClient != null &&
         NetworkManager.Singleton.LocalClient.PlayerObject == null;
@@ -51,11 +47,6 @@ public class GameSessionManager : NetworkBehaviour
     private NetworkVariable<bool> blueActivated = new NetworkVariable<bool>(false);
     private NetworkVariable<bool> orangeActivated = new NetworkVariable<bool>(false);
     private NetworkVariable<bool> purpleActivated = new NetworkVariable<bool>(false);
-    
-    private NetworkVariable<bool> greenCodeVerified = new NetworkVariable<bool>(false);
-    private NetworkVariable<bool> blueCodeVerified = new NetworkVariable<bool>(false);
-    private NetworkVariable<bool> orangeCodeVerified = new NetworkVariable<bool>(false);
-    private NetworkVariable<bool> purpleCodeVerified = new NetworkVariable<bool>(false);
 
     private NetworkVariable<bool> greenOpen = new NetworkVariable<bool>(false);
     private NetworkVariable<bool> blueOpen = new NetworkVariable<bool>(false);
@@ -64,6 +55,8 @@ public class GameSessionManager : NetworkBehaviour
 
     private NetworkVariable<bool> monsterInCage = new NetworkVariable<bool>(false);
     private NetworkVariable<SessionState> sessionState = new NetworkVariable<SessionState>(SessionState.Connecting);
+
+    private bool monsterDeathAnimPlaying; // blocks the win check until PlayTrappedAnimation's callback fires
 
     public bool IsPlaying => sessionState.Value == SessionState.Playing;
 
@@ -80,19 +73,14 @@ public class GameSessionManager : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-          explorerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
+        explorerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         controllerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         sessionState.OnValueChanged += (_, _) => RefreshSessionUI();
-        
-        greenActivated.OnValueChanged += (_, v) => { if (IsLocalController) greenCodePanel.SetVisible(v); };
-        blueActivated.OnValueChanged += (_, v) => { if (IsLocalController) blueCodePanel.SetVisible(v); };
-        orangeActivated.OnValueChanged += (_, v) => { if (IsLocalController) orangeCodePanel.SetVisible(v); };
-        purpleActivated.OnValueChanged += (_, v) => { if (IsLocalController) purpleCodePanel.SetVisible(v); };
-        
-        greenCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { greenButton.SetActivated(v); if (v) greenCodePanel.Hide(); } };
-        blueCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { blueButton.SetActivated(v); if (v) blueCodePanel.Hide(); } };
-        orangeCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { orangeButton.SetActivated(v); if (v) orangeCodePanel.Hide(); } };
-        purpleCodeVerified.OnValueChanged += (_, v) => { if (IsLocalController) { purpleButton.SetActivated(v); if (v) purpleCodePanel.Hide(); } };
+
+        greenActivated.OnValueChanged += (_, v) => { if (IsLocalController) greenButton.SetActivated(v); };
+        blueActivated.OnValueChanged += (_, v) => { if (IsLocalController) blueButton.SetActivated(v); };
+        orangeActivated.OnValueChanged += (_, v) => { if (IsLocalController) orangeButton.SetActivated(v); };
+        purpleActivated.OnValueChanged += (_, v) => { if (IsLocalController) purpleButton.SetActivated(v); };
 
         greenOpen.OnValueChanged += (_, v) => greenDoor.SetOpen(v);
         blueOpen.OnValueChanged += (_, v) => blueDoor.SetOpen(v);
@@ -104,22 +92,17 @@ public class GameSessionManager : NetworkBehaviour
 
         if (IsLocalController)
         {
-            greenCodePanel.SetVisible(greenActivated.Value);
-            blueCodePanel.SetVisible(blueActivated.Value);
-            orangeCodePanel.SetVisible(orangeActivated.Value);
-            purpleCodePanel.SetVisible(purpleActivated.Value);
-
-            greenButton.SetActivated(greenCodeVerified.Value);
-            blueButton.SetActivated(blueCodeVerified.Value);
-            orangeButton.SetActivated(orangeCodeVerified.Value);
-            purpleButton.SetActivated(purpleCodeVerified.Value);
+            greenButton.SetActivated(greenActivated.Value);
+            blueButton.SetActivated(blueActivated.Value);
+            orangeButton.SetActivated(orangeActivated.Value);
+            purpleButton.SetActivated(purpleActivated.Value);
         }
 
         greenDoor.SetOpen(greenOpen.Value);
         blueDoor.SetOpen(blueOpen.Value);
         orangeDoor.SetOpen(orangeOpen.Value);
         purpleDoor.SetOpen(purpleOpen.Value);
-        
+
         if (IsServer)
         {
             sessionState.Value = SessionState.Playing;
@@ -142,11 +125,11 @@ public class GameSessionManager : NetworkBehaviour
         if (!winLoseUIController) return;
         switch (sessionState.Value)
         {
-            case SessionState.Won: 
+            case SessionState.Won:
                 winLoseUIController.ShowWin();
                 if (IsServer) UnlockCursorClientRpc();
                 break;
-            case SessionState.Lost: 
+            case SessionState.Lost:
                 winLoseUIController.ShowLose();
                 if (IsServer) UnlockCursorClientRpc();
                 break;
@@ -167,42 +150,16 @@ public class GameSessionManager : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     public void RegisterControllerServerRpc() { controllerConnected.Value = true; }
 
-    [ServerRpc(RequireOwnership = false)]
-    public void ActivateColorServerRpc(DoorColor color) { SetActivated(color, true); }
-    
-    [ServerRpc(RequireOwnership = false)]
-    public void SubmitCodeServerRpc(DoorColor color, string code, ServerRpcParams rpcParams = default)
+    public void CollectKey(DoorColor color)
     {
-        if (code == GetDoorCode(color))
-        {
-            SetCodeVerified(color, true);
-        }
-        else
-        {
-            ClientRpcParams targetParams = new ClientRpcParams
-            {
-                Send = new ClientRpcSendParams { TargetClientIds = new[] { rpcParams.Receive.SenderClientId } }
-            };
-            WrongCodeClientRpc(color, targetParams);
-        }
-    }
-    
-    [ClientRpc]
-    private void WrongCodeClientRpc(DoorColor color, ClientRpcParams rpcParams = default)
-    {
-        switch (color)
-        {
-            case DoorColor.Green: greenCodePanel.ShowError(); break;
-            case DoorColor.Blue: blueCodePanel.ShowError(); break;
-            case DoorColor.Orange: orangeCodePanel.ShowError(); break;
-            default: purpleCodePanel.ShowError(); break;
-        }
+        if (!IsServer) return;
+        SetActivated(color, true);
     }
 
     [ServerRpc(RequireOwnership = false)]
     public void SetDoorHeldServerRpc(DoorColor color, bool held)
     {
-        if (!GetCodeVerified(color)) return;
+        if (!GetActivated(color)) return;
         SetOpen(color, held);
         CheckWinCondition();
     }
@@ -211,7 +168,22 @@ public class GameSessionManager : NetworkBehaviour
     {
         if (!IsServer) return;
         monsterInCage.Value = inCage;
-        CheckWinCondition();
+
+        if (!inCage)
+        {
+            monsterDeathAnimPlaying = false;
+            CheckWinCondition();
+            return;
+        }
+
+        if (monsterDeathAnimPlaying) return;
+        monsterDeathAnimPlaying = true;
+
+        monster.PlayTrappedAnimation(() =>
+        {
+            monsterDeathAnimPlaying = false;
+            CheckWinCondition();
+        });
     }
 
     public void NotifyPlayerCaught()
@@ -225,10 +197,22 @@ public class GameSessionManager : NetworkBehaviour
     {
         if (!IsServer) return;
         if (sessionState.Value != SessionState.Playing) return;
+        if (monsterDeathAnimPlaying) return;
 
         bool allClosed = !greenOpen.Value && !blueOpen.Value && !orangeOpen.Value && !purpleOpen.Value;
         if (monsterInCage.Value && allClosed)
             sessionState.Value = SessionState.Won;
+    }
+
+    private bool GetActivated(DoorColor color)
+    {
+        switch (color)
+        {
+            case DoorColor.Green: return greenActivated.Value;
+            case DoorColor.Blue: return blueActivated.Value;
+            case DoorColor.Orange: return orangeActivated.Value;
+            default: return purpleActivated.Value;
+        }
     }
 
     private void SetActivated(DoorColor color, bool value)
@@ -239,39 +223,6 @@ public class GameSessionManager : NetworkBehaviour
             case DoorColor.Blue: blueActivated.Value = value; break;
             case DoorColor.Orange: orangeActivated.Value = value; break;
             default: purpleActivated.Value = value; break;
-        }
-    }
-    
-    private bool GetCodeVerified(DoorColor color)
-    {
-        switch (color)
-        {
-            case DoorColor.Green: return greenCodeVerified.Value;
-            case DoorColor.Blue: return blueCodeVerified.Value;
-            case DoorColor.Orange: return orangeCodeVerified.Value;
-            default: return purpleCodeVerified.Value;
-        }
-    }
-    
-    private void SetCodeVerified(DoorColor color, bool value)
-    {
-        switch (color)
-        {
-            case DoorColor.Green: greenCodeVerified.Value = value; break;
-            case DoorColor.Blue: blueCodeVerified.Value = value; break;
-            case DoorColor.Orange: orangeCodeVerified.Value = value; break;
-            default: purpleCodeVerified.Value = value; break;
-        }
-    }
-    
-    private string GetDoorCode(DoorColor color)
-    {
-        switch (color)
-        {
-            case DoorColor.Green: return GreenCode;
-            case DoorColor.Blue: return BlueCode;
-            case DoorColor.Orange: return OrangeCode;
-            default: return PurpleCode;
         }
     }
 
@@ -304,6 +255,7 @@ public class GameSessionManager : NetworkBehaviour
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 
+
     private void ShutdownHost()
     {
         NetworkManager.Singleton.Shutdown();
@@ -320,16 +272,15 @@ public class GameSessionManager : NetworkBehaviour
         blueActivated.Value = false;
         orangeActivated.Value = false;
         purpleActivated.Value = false;
-        
-        greenCodeVerified.Value = false;
-        blueCodeVerified.Value = false;
-        orangeCodeVerified.Value = false;
-        purpleCodeVerified.Value = false;
 
         greenOpen.Value = false;
         blueOpen.Value = false;
         orangeOpen.Value = false;
         purpleOpen.Value = false;
+
+        if (leverStation) leverStation.ResetPuzzle();
+
+        monsterDeathAnimPlaying = false;
 
         monster.ResetToSpawn();
         RespawnPlayersClientRpc();

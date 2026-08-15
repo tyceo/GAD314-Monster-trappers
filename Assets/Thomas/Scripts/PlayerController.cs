@@ -226,6 +226,10 @@ using UnityEngine.InputSystem;
     }
 }*/
 
+using Unity.Netcode;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
 public class PlayerController : NetworkBehaviour
 {
     [Header("Movement")]
@@ -245,12 +249,6 @@ public class PlayerController : NetworkBehaviour
     private InputAction moveAction;
     private InputAction lookAction;
     private InputAction jumpAction;
-
-    [Header("Keys")]
-    private GameObject greenKey;
-    private GameObject blueKey;
-    private GameObject purpleKey;
-    private GameObject orangeKey;
 
     [Header("Respawn")]
     [SerializeField] private Vector3 respawnPosition = new Vector3(3.35f, 1.83f, -4.38f);
@@ -303,14 +301,6 @@ public class PlayerController : NetworkBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
-    private void Start()
-    {
-        greenKey = GameObject.Find("GreenKey");
-        blueKey = GameObject.Find("BlueKey");
-        purpleKey = GameObject.Find("PurpleKey");
-        orangeKey = GameObject.Find("OrangeKey");
-    }
-
     private void Update()
     {
         HandleLook();
@@ -353,13 +343,7 @@ public class PlayerController : NetworkBehaviour
         if (other.CompareTag("PlayerDie"))
         {
             RespawnPlayer();
-            return;
         }
-
-        if (other.gameObject == greenKey) CollectKeyServerRpc(DoorColor.Green);
-        else if (other.gameObject == blueKey) CollectKeyServerRpc(DoorColor.Blue);
-        else if (other.gameObject == purpleKey) CollectKeyServerRpc(DoorColor.Purple);
-        else if (other.gameObject == orangeKey) CollectKeyServerRpc(DoorColor.Orange);
     }
 
     private void RespawnPlayer()
@@ -374,27 +358,5 @@ public class PlayerController : NetworkBehaviour
     {
         if (!IsOwner) return;
         RespawnPlayer();
-    }
-
-    [ServerRpc]
-    private void CollectKeyServerRpc(DoorColor color)
-    {
-        GameObject key = null;
-        switch (color)
-        {
-            case DoorColor.Green: key = GameObject.Find("GreenKey"); break;
-            case DoorColor.Blue: key = GameObject.Find("BlueKey"); break;
-            case DoorColor.Purple: key = GameObject.Find("PurpleKey"); break;
-            case DoorColor.Orange: key = GameObject.Find("OrangeKey"); break;
-        }
-
-        if (key != null)
-        {
-            NetworkObject keyNetObj = key.GetComponent<NetworkObject>();
-            if (keyNetObj != null) keyNetObj.Despawn();
-            else Destroy(key);
-        }
-
-        GameSessionManager.Instance.ActivateColorServerRpc(color);
     }
 }

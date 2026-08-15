@@ -37,6 +37,6 @@ public class CodeEntryPanel : MonoBehaviour
     private void OnSubmit()
     {
         string code = codeInputField.text.Trim();
-        GameSessionManager.Instance.SubmitCodeServerRpc(color, code);
+        // GameSessionManager.Instance.SubmitCodeServerRpc(color, code);
     }
 }

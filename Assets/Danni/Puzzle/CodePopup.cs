@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class CodePopup : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class CodePopup : MonoBehaviour
         Instance = this;
         closeButton.onClick.AddListener(Close);
         popupRoot.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            Close();
+        }
     }
 
     public void Show(DoorColor color, string code)
