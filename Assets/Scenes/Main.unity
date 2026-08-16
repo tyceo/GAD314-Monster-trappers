@@ -16189,8 +16189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42c0b76b289a604684b46e655b90e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grid3D
-  areaCenter: {x: -80, y: 4, z: -250}
-  areaSizeXYZ: {x: 220, y: 6, z: 300}
+  areaCenter: {x: 0, y: 4, z: -200}
+  areaSizeXYZ: {x: 500, y: 6, z: 360}
   cellSize: 2
   drawGizmos: 1
   lineColor: {r: 0, g: 0.6, b: 1, a: 0.6}
