@@ -234,25 +234,14 @@ public class Switchboard : NetworkBehaviour
 
     private bool[] GetCorrectPattern()
     {
-        // Only Blood Demon is implemented right now - add a branch per monster type here later
         if (GameSessionManager.Instance.currentMonsterType != MonsterType.BloodDemon) return null;
 
         switch (boardColor)
         {
-            case DoorColor.Orange:
-                return new bool[] { true, false, true, true }; // domed roof corridor leading to the trap room
-
-            case DoorColor.Green:
-                return GetGreenPattern();
-
-            case DoorColor.Purple:
-                bool[] greenPattern = GetGreenPattern();
-                return GameSessionManager.Instance.moreThanFiveRooms ? greenPattern : Invert(greenPattern);
-
-            default: // Blue
-                return GameSessionManager.Instance.blueFullFogPresent
-                    ? new bool[] { false, false, false, false }
-                    : new bool[] { true, false, true, false };
+            case DoorColor.Orange: return new bool[] { true, false, true, true };   // Up Down Up Up
+            case DoorColor.Green: return new bool[] { true, true, false, true };    // Up Up Down Up
+            case DoorColor.Purple: return new bool[] { false, false, true, false }; // Down Down Up Down
+            default: return new bool[] { false, false, false, false };             // Down Down Down Down
         }
     }
 
