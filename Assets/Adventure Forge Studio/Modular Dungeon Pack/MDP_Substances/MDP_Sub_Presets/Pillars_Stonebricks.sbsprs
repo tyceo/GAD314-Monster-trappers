@@ -1,0 +1,11 @@
+<sbspresets count="1" formatversion="1.1">
+  <sbspreset pkgurl="pkg://Pillars_Stonebricks" label="" >
+  <presetinput identifier="$outputsize" uid="739310914" type="8" value="11,11" />
+  <presetinput identifier="Brick_Pattern_Number_of_bricks" uid="1482980227" type="8" value="8,12" />
+  <presetinput identifier="Crack_parameters_Number_Of_Cracks" uid="1482980255" type="4" value="8" />
+  <presetinput identifier="Crack_parameters_Intensity" uid="1482980253" type="0" value="0.493" />
+  <presetinput identifier="Crack_parameters_Use_Height_Difference" uid="1482980259" type="4" value="1" />
+  <presetinput identifier="Moss_Moss_Roughness" uid="1482980271" type="0" value="0.414" />
+  <presetinput identifier="Moss_Blending_Blending_Position" uid="1482980278" type="0" value="0.212" />
+ </sbspreset>
+</sbspresets>

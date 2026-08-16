@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9fd5968431e592a4cb75777c4e94fbe6
+timeCreated: 1482235415
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Animation Ctrl/MDP_Dungeon_Doors_IronGate_T01_AnimCtrl.controller
+  uploadId: 248780

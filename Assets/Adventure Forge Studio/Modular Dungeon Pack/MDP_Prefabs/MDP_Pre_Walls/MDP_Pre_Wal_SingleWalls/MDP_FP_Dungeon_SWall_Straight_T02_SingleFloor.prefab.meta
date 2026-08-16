@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 05de553b3bafd2d499c2e489bf3f0d03
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482235042
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs/MDP_Pre_Walls/MDP_Pre_Wal_SingleWalls/MDP_FP_Dungeon_SWall_Straight_T02_SingleFloor.prefab
+  uploadId: 248780

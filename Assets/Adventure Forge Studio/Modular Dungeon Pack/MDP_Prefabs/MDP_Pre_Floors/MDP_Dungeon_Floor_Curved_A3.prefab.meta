@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: d7b8d25c8d8f5f040aeee11105b4991b
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482230692
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs/MDP_Pre_Floors/MDP_Dungeon_Floor_Curved_A3.prefab
+  uploadId: 248780

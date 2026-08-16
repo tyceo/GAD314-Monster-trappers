@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 1d031b334526f52469eafa9b65ebb851
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482232533
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs/MDP_Pre_PreMade/MDP_Pre_PreM_Hallways/MDP_Dungeon_Room_HallwayWide_Crossing_T01.prefab
+  uploadId: 248780

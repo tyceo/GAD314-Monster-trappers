@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 32acc123664f4f143b12f0991bc6e7ad
+timeCreated: 1490699752
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_CeilingTraps_FallingSpikeGrate.controller
+  uploadId: 248780

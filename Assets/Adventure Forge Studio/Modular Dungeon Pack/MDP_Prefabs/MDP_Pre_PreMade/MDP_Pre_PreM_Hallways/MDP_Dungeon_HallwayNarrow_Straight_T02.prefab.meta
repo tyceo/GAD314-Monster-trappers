@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 5d18a39de31cb1248bd270d6917e339e
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482232520
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs/MDP_Pre_PreMade/MDP_Pre_PreM_Hallways/MDP_Dungeon_HallwayNarrow_Straight_T02.prefab
+  uploadId: 248780

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 64313fa22dfcdea428ef553e779cee3c
+timeCreated: 1490780689
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_MiscTraps_SpearEjector.controller
+  uploadId: 248780

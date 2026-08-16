@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96566a1dfb525814891319de8739498b
+timeCreated: 1483107043
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Animation Ctrl/MDP_Dungeon_Clutter_Crystals.controller
+  uploadId: 248780

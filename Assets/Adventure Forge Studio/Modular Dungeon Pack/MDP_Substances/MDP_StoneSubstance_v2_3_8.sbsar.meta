@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: 8f78e34c89c69f943bd68282871bbe0c
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: MDP_StoneSubstance_v2_3_8/MDP_StoneSubstance_v2_3_8
+    400000: MDP_StoneSubstance_v2_3_8/MDP_StoneSubstance_v2_3_8/Transform
+    2100000: mat.Base_Stone
+    2100002: mat.Base_StoneSlabs
+    2100004: mat.Base_Stonebricks
+    2100006: mat.Ceiling_Stonebricks
+    2100008: mat.Floor_Stonebricks
+    2100010: mat.Floor_Stoneslabs
+    2100012: mat.Pillars_Stonebricks
+    2100014: mat.Skirting_Stone
+    2100016: mat.Support_Stonebricks
+    2100018: mat.Walls_Stonebricks
+    2300000: MDP_StoneSubstance_v2_3_8/MDP_StoneSubstance_v2_3_8/MeshRenderer
+    2800000: Base_Stone_Base Color
+    2800002: Base_Stone_Normal
+    2800004: Base_Stone_Metallic
+    2800006: Base_Stone_Ambient Occlusion
+    2800008: Base_StoneSlabs_Base Color
+    2800010: Base_StoneSlabs_Normal
+    2800012: Base_StoneSlabs_Metallic
+    2800014: Base_StoneSlabs_Ambient Occlusion
+    2800016: Base_Stonebricks_Base Color
+    2800018: Base_Stonebricks_Normal
+    2800020: Base_Stonebricks_Metallic
+    2800022: Base_Stonebricks_Ambient Occlusion
+    2800024: Base_Stonebricks_Height
+    2800026: Ceiling_Stonebricks_Base Color
+    2800028: Ceiling_Stonebricks_Normal
+    2800030: Ceiling_Stonebricks_Metallic
+    2800032: Ceiling_Stonebricks_Ambient Occlusion
+    2800034: Ceiling_Stonebricks_Height
+    2800036: Floor_Stonebricks_Base Color
+    2800038: Floor_Stonebricks_Normal
+    2800040: Floor_Stonebricks_Metallic
+    2800042: Floor_Stonebricks_Ambient Occlusion
+    2800044: Floor_Stonebricks_Height
+    2800046: Floor_Stoneslabs_Base Color
+    2800048: Floor_Stoneslabs_Normal
+    2800050: Floor_Stoneslabs_Metallic
+    2800052: Floor_Stoneslabs_Ambient Occlusion
+    2800054: Pillars_Stonebricks_Base Color
+    2800056: Pillars_Stonebricks_Normal
+    2800058: Pillars_Stonebricks_Metallic
+    2800060: Pillars_Stonebricks_Ambient Occlusion
+    2800062: Pillars_Stonebricks_Height
+    2800064: Skirting_Stone_Base Color
+    2800066: Skirting_Stone_Normal
+    2800068: Skirting_Stone_Metallic
+    2800070: Skirting_Stone_Ambient Occlusion
+    2800072: Support_Stonebricks_Base Color
+    2800074: Support_Stonebricks_Normal
+    2800076: Support_Stonebricks_Metallic
+    2800078: Support_Stonebricks_Ambient Occlusion
+    2800080: Support_Stonebricks_Height
+    2800082: Walls_Stonebricks_Base Color
+    2800084: Walls_Stonebricks_Normal
+    2800086: Walls_Stonebricks_Metallic
+    2800088: Walls_Stonebricks_Ambient Occlusion
+    2800090: Walls_Stonebricks_Height
+    3300000: MDP_StoneSubstance_v2_3_8/MDP_StoneSubstance_v2_3_8/MeshFilter
+    11400000: graph1
+    11400002: graph2
+    11400004: graph3
+    11400006: graph4
+    11400008: graph5
+    11400010: graph6
+    11400012: graph7
+    11400014: graph8
+    11400016: graph9
+    11400018: sbsar
+    11400020: graph0
+    13500000: MDP_StoneSubstance_v2_3_8/MDP_StoneSubstance_v2_3_8/SphereCollider
+    100100000: MDP_StoneSubstance_v2_3_8
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Base_Stone
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Base_Stone\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100000, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Base_StoneSlabs
+    graphDescIndex: 1
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Base_StoneSlabs\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100002, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Base_Stonebricks
+    graphDescIndex: 2
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Base_Stonebricks\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100004, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Ceiling_Stonebricks
+    graphDescIndex: 3
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Ceiling_Stonebricks\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2200140013\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"Brick_Shape_Deformation_Intensity\" uid=\"4149718818\"
+      type=\"0\" value=\"0.76\" />\n  <presetinput identifier=\"Brick_Shape_Erosion_1\"
+      uid=\"4149718844\" type=\"0\" value=\"0.1\" />\n  <presetinput identifier=\"Brick_Pattern_Number_of_bricks\"
+      uid=\"4149718834\" type=\"8\" value=\"4,14\" />\n  <presetinput identifier=\"Crack_parameters_Intensity\"
+      uid=\"4149718800\" type=\"0\" value=\"0.471\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100006, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Floor_Stonebricks
+    graphDescIndex: 4
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Floor_Stonebricks\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3723822075\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"$randomseed\" uid=\"2324108713\" type=\"4\" value=\"2298\"
+      />\n  <presetinput identifier=\"Texture_Rotation\" uid=\"2843838528\" type=\"0\"
+      value=\"0.125\" />\n  <presetinput identifier=\"Brick_Shape_Deformation_Intensity\"
+      uid=\"2843838534\" type=\"0\" value=\"0.34\" />\n  <presetinput identifier=\"Brick_Shape_Erosion_1\"
+      uid=\"2843838532\" type=\"0\" value=\"0.083\" />\n  <presetinput identifier=\"Brick_Shape_Erosion_2\"
+      uid=\"2843838650\" type=\"0\" value=\"2.33\" />\n  <presetinput identifier=\"Brick_Shape_Height_slope_amount\"
+      uid=\"2843838640\" type=\"3\" value=\"0.648,-0.587,0.371,1\" />\n  <presetinput
+      identifier=\"Brick_Pattern_Number_of_bricks\" uid=\"2843838646\" type=\"8\"
+      value=\"8,8\" />\n  <presetinput identifier=\"Brick_Pattern_Horizontal_gap_offset\"
+      uid=\"2843838634\" type=\"1\" value=\"1,0\" />\n  <presetinput identifier=\"Crack_parameters_Number_Of_Cracks\"
+      uid=\"2843838610\" type=\"4\" value=\"10\" />\n  <presetinput identifier=\"Crack_parameters_Intensity\"
+      uid=\"2843838608\" type=\"0\" value=\"0.221\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100008, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Floor_Stoneslabs
+    graphDescIndex: 5
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Floor_Stoneslabs\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1174966955\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"Moss_Blending_Blending_Position\" uid=\"847007539\"
+      type=\"0\" value=\"0.471\" />\n  <presetinput identifier=\"Stone_Slabs_Number_Of_Cells\"
+      uid=\"847007541\" type=\"4\" value=\"8\" />\n  <presetinput identifier=\"Rock_Roughness_Roughness\"
+      uid=\"847007489\" type=\"0\" value=\"0.648\" />\n  <presetinput identifier=\"Cracks_Cracks_Blending_Amount\"
+      uid=\"847007515\" type=\"0\" value=\"0.083\" />\n  <presetinput identifier=\"Cracks_Number_Of_Cells\"
+      uid=\"847007513\" type=\"4\" value=\"10\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100010, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Pillars_Stonebricks
+    graphDescIndex: 6
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Pillars_Stonebricks\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"739310914\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"Brick_Pattern_Number_of_bricks\" uid=\"1482980227\"
+      type=\"8\" value=\"8,12\" />\n  <presetinput identifier=\"Crack_parameters_Number_Of_Cracks\"
+      uid=\"1482980255\" type=\"4\" value=\"8\" />\n  <presetinput identifier=\"Crack_parameters_Intensity\"
+      uid=\"1482980253\" type=\"0\" value=\"0.493\" />\n  <presetinput identifier=\"Crack_parameters_Use_Height_Difference\"
+      uid=\"1482980259\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Moss_Moss_Roughness\"
+      uid=\"1482980271\" type=\"0\" value=\"0.414\" />\n  <presetinput identifier=\"Moss_Blending_Blending_Position\"
+      uid=\"1482980278\" type=\"0\" value=\"0.212\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100012, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Skirting_Stone
+    graphDescIndex: 7
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Skirting_Stone\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3052710964\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100014, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Support_Stonebricks
+    graphDescIndex: 8
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Support_Stonebricks\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3998244014\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"Texture_Rotation\" uid=\"2586095116\" type=\"0\"
+      value=\"0.25\" />\n  <presetinput identifier=\"Brick_Pattern_Number_of_bricks\"
+      uid=\"2586095130\" type=\"8\" value=\"3,7\" />\n  <presetinput identifier=\"Brick_Pattern_Horizontal_gap_offset\"
+      uid=\"2586095126\" type=\"1\" value=\"0.664,0.199\" />\n  <presetinput identifier=\"Moss_Moss_Roughness\"
+      uid=\"2586095310\" type=\"0\" value=\"0.559\" />\n  <presetinput identifier=\"Moss_Blending_Blending_Position\"
+      uid=\"2586095302\" type=\"0\" value=\"0.262\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100016, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+  - graphLabel: Walls_Stonebricks
+    graphDescIndex: 9
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Walls_Stonebricks\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"4106388923\" type=\"8\" value=\"11,11\" />\n 
+      <presetinput identifier=\"Brick_Shape_Height_slope_amount\" uid=\"2159438738\"
+      type=\"3\" value=\"0.449,-0.483,0.423,1\" />\n  <presetinput identifier=\"Brick_Pattern_Number_of_bricks\"
+      uid=\"2159438736\" type=\"8\" value=\"4,12\" />\n  <presetinput identifier=\"Brick_Pattern_Symmetry\"
+      uid=\"2159438742\" type=\"1\" value=\"0.387,0.552\" />\n  <presetinput identifier=\"Brick_Pattern_Horizontal_gap_offset\"
+      uid=\"2159438740\" type=\"1\" value=\"0.367,0.81\" />\n  <presetinput identifier=\"Crack_parameters_Number_Of_Cracks\"
+      uid=\"2159436924\" type=\"4\" value=\"10\" />\n  <presetinput identifier=\"Crack_parameters_Intensity\"
+      uid=\"2159436914\" type=\"0\" value=\"0.28\" />\n  <presetinput identifier=\"Crack_parameters_Crack_Edge_Bevel\"
+      uid=\"2159436904\" type=\"0\" value=\"0.539\" />\n  <presetinput identifier=\"Moss_Moss_Roughness\"
+      uid=\"2159436908\" type=\"0\" value=\"0.52\" />\n  <presetinput identifier=\"Moss_Invert_Moss_Roughness\"
+      uid=\"2159436896\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Moss_Blending_Blending_Position\"
+      uid=\"2159436900\" type=\"0\" value=\"0.13\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100018, guid: 8f78e34c89c69f943bd68282871bbe0c, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Substances/MDP_StoneSubstance_v2_3_8.sbsar
+  uploadId: 248780

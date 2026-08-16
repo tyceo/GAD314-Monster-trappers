@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d9a123631e7962b45b38bcbb59892956
+timeCreated: 1483216336
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Scene/DemoScene/OcclusionCullingData.asset
+  uploadId: 248780

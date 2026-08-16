@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 574fd0bd3f991404e9cc1d1f7ddffe39
+timeCreated: 1490535662
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_Decoration/MDP_Mat_Dec_LargeWoodBeam.mat
+  uploadId: 248780

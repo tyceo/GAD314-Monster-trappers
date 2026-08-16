@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 256da0bc0b1a5ed4892260af10acd6c7
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482234889
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs_NonSubstance/MDP_Pre_NonSub_Walls/MDP_Pre_NonSub_Wal_DoubleWalls/MDP_Pre_NonSub_DWall_InnerCorner_T01_MidFloor.prefab
+  uploadId: 248780

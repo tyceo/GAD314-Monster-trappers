@@ -51,7 +51,7 @@ Material:
     - SCROLL_STATIC: 0
     - STATIC: 1
     - Vector1_1BFF6B46: 768.46
-    - Vector1_5660967D: 1
+    - Vector1_5660967D: 1.74
     - Vector1_63AA1B2A: 0.2
     - Vector1_96113905: 100
     - Vector1_DF019693: 0.5
@@ -59,9 +59,9 @@ Material:
     - _DistortionStrength: 0.01
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScanlineHeight: 10
+    - _ScanlineHeight: 22.2
     - _ScanlineStrength: 0.001
-    - _StaticStrength: 0.01
+    - _StaticStrength: 0.001
     m_Colors:
     - _CRTWarpStrength: {r: 1.82, g: 2.63, b: 0, a: 0}
   m_BuildTextureStacks: []

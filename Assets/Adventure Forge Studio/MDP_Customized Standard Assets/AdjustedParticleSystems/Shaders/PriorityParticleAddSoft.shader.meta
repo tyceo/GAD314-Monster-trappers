@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 694eef9939f180440a9d0891272eddba
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/MDP_Customized Standard Assets/AdjustedParticleSystems/Shaders/PriorityParticleAddSoft.shader
+  uploadId: 248780

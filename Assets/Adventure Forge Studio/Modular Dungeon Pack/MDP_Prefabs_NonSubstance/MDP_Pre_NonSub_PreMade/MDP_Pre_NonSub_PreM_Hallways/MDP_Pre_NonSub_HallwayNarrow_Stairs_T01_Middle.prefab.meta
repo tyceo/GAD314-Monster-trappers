@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 1bcb5be0af2c16e4687b5562c18f341b
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482232528
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs_NonSubstance/MDP_Pre_NonSub_PreMade/MDP_Pre_NonSub_PreM_Hallways/MDP_Pre_NonSub_HallwayNarrow_Stairs_T01_Middle.prefab
+  uploadId: 248780

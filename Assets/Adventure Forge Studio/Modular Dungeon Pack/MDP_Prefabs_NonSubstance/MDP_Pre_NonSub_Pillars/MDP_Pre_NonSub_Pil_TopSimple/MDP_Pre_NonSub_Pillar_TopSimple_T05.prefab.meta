@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 978bfa4cfec0d2a4db08c930cf5bf6e5
+labels:
+- AAA
+- Adventure
+- Castle
+- Crawler
+- Dungeon
+- Environment
+- Fantasy
+- Interrior
+- Level
+- Medieval
+- Modular
+- PBR
+- Prison
+- RPG
+- Realistic
+- Stoneslabs
+- Substance
+- Temple
+- Tourch
+- building
+- create
+- creation
+- kit
+timeCreated: 1482231046
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Prefabs_NonSubstance/MDP_Pre_NonSub_Pillars/MDP_Pre_NonSub_Pil_TopSimple/MDP_Pre_NonSub_Pillar_TopSimple_T05.prefab
+  uploadId: 248780

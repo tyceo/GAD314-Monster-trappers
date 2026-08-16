@@ -1,0 +1,10 @@
+<sbspresets count="1" formatversion="1.1">
+  <sbspreset pkgurl="pkg://Support_Stonebricks" label="" >
+  <presetinput identifier="$outputsize" uid="3998244014" type="8" value="11,11" />
+  <presetinput identifier="Texture_Rotation" uid="2586095116" type="0" value="0.25" />
+  <presetinput identifier="Brick_Pattern_Number_of_bricks" uid="2586095130" type="8" value="3,7" />
+  <presetinput identifier="Brick_Pattern_Horizontal_gap_offset" uid="2586095126" type="1" value="0.664,0.199" />
+  <presetinput identifier="Moss_Moss_Roughness" uid="2586095310" type="0" value="0.559" />
+  <presetinput identifier="Moss_Blending_Blending_Position" uid="2586095302" type="0" value="0.262" />
+ </sbspreset>
+</sbspresets>

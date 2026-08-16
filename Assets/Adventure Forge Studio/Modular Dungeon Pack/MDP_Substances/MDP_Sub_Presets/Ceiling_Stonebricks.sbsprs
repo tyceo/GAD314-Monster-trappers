@@ -1,0 +1,9 @@
+<sbspresets count="1" formatversion="1.1">
+  <sbspreset pkgurl="pkg://Ceiling_Stonebricks" label="" >
+  <presetinput identifier="$outputsize" uid="2200140013" type="8" value="11,11" />
+  <presetinput identifier="Brick_Shape_Deformation_Intensity" uid="4149718818" type="0" value="0.76" />
+  <presetinput identifier="Brick_Shape_Erosion_1" uid="4149718844" type="0" value="0.1" />
+  <presetinput identifier="Brick_Pattern_Number_of_bricks" uid="4149718834" type="8" value="4,14" />
+  <presetinput identifier="Crack_parameters_Intensity" uid="4149718800" type="0" value="0.471" />
+ </sbspreset>
+</sbspresets>

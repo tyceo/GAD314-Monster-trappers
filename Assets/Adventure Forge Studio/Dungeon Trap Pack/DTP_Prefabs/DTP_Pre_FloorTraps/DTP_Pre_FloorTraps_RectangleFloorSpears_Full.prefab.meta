@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 89be72837e92a1d49934fbb86dc70168
+labels:
+- ambush
+- animation
+- blade
+- booby
+- boobytrap
+- ceiling
+- cell
+- chains
+- club
+- damage
+- danger
+- dungeon
+- fantasy
+- floor
+- lever
+- medieval
+- medivel
+- pbr
+- pbs
+- plate
+- preasure
+- sawblade
+- spear
+- spike
+- torture
+- trap
+- wall
+- weapon
+timeCreated: 1489926381
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Prefabs/DTP_Pre_FloorTraps/DTP_Pre_FloorTraps_RectangleFloorSpears_Full.prefab
+  uploadId: 248780

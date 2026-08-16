@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c54258ae07d9dde40a0fe572d84cbf59
+timeCreated: 1490697094
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Prefabs/DTP_Pre_CeilingTraps/DTP_CeilingTraps_SwingingBlade_New_FBX.prefab
+  uploadId: 248780

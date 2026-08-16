@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 587545573546db444b89981de99e684d
+timeCreated: 1489929717
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Scripts/ParticleMovment.cs
+  uploadId: 248780

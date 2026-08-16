@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: 4095a346ca2a0794a9fb0d7a5957274b
+timeCreated: 1483106739
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Crystal_01
+    100002: Crystal_02
+    100004: Crystal_03
+    100006: Crystal_04
+    100008: Crystal_05
+    100010: Crystal_06
+    100012: //RootNode
+    400000: Crystal_01
+    400002: Crystal_02
+    400004: Crystal_03
+    400006: Crystal_04
+    400008: Crystal_05
+    400010: Crystal_06
+    400012: //RootNode
+    2300000: Crystal_01
+    2300002: Crystal_02
+    2300004: Crystal_03
+    2300006: Crystal_04
+    2300008: Crystal_05
+    2300010: Crystal_06
+    3300000: Crystal_01
+    3300002: Crystal_02
+    3300004: Crystal_03
+    3300006: Crystal_04
+    3300008: Crystal_05
+    3300010: Crystal_06
+    4300000: Crystal_01
+    4300002: Crystal_02
+    4300004: Crystal_03
+    4300006: Crystal_04
+    4300008: Crystal_05
+    4300010: Crystal_06
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Geometry/MDP_Geo_Decoration/MDP_Geo_Dec_Crystals.fbx
+  uploadId: 248780

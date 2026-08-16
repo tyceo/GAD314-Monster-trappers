@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 2d918274b0a3e9740ad0119c2d116314
+labels:
+- ambush
+- animation
+- blade
+- booby
+- boobytrap
+- ceiling
+- cell
+- chains
+- club
+- damage
+- danger
+- dungeon
+- fantasy
+- floor
+- lever
+- medieval
+- medivel
+- pbr
+- pbs
+- plate
+- preasure
+- sawblade
+- spear
+- spike
+- torture
+- trap
+- wall
+- weapon
+timeCreated: 1489945345
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Prefabs/DTP_Pre_WallTraps/DTP_Pre_WallTraps_SpearSlit.prefab
+  uploadId: 248780

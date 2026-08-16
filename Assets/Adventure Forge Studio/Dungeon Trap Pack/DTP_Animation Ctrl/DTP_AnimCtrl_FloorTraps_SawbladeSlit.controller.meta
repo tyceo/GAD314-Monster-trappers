@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7de5f38e9f81a9d4ab0856d35f87b021
+timeCreated: 1489930888
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_FloorTraps_SawbladeSlit.controller
+  uploadId: 248780

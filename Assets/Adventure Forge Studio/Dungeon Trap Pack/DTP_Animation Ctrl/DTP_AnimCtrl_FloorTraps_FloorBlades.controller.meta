@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 92f31e91e37dd5145bb01e658741c4e0
+timeCreated: 1490778582
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_FloorTraps_FloorBlades.controller
+  uploadId: 248780

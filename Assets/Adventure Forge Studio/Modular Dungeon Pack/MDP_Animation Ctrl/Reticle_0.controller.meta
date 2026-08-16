@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 643cb20b4ffc97245b08d26524725a24
+timeCreated: 1482403376
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Animation Ctrl/Reticle_0.controller
+  uploadId: 248780

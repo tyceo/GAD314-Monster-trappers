@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d10bf7e8645e1244dab934f619cc25cf
+timeCreated: 1483113745
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/Skybox.mat
+  uploadId: 248780

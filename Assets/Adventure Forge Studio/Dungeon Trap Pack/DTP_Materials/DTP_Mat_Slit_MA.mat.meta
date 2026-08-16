@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd699c985bd72eb4b8a1ef5e253fc504
+timeCreated: 1489751674
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Materials/DTP_Mat_Slit_MA.mat
+  uploadId: 248780

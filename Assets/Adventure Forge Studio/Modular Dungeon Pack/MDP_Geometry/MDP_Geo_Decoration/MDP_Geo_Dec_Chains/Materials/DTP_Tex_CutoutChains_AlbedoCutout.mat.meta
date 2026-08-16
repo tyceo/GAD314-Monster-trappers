@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ea490dd6dc7d394b8a393cb974e9367
+timeCreated: 1496079881
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Geometry/MDP_Geo_Decoration/MDP_Geo_Dec_Chains/Materials/DTP_Tex_CutoutChains_AlbedoCutout.mat
+  uploadId: 248780

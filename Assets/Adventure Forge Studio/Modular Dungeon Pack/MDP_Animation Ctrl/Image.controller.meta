@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73ab78eabf3c60743bdd50d9fda4a35c
+timeCreated: 1482405478
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Animation Ctrl/Image.controller
+  uploadId: 248780
