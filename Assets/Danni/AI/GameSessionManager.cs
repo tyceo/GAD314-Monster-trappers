@@ -14,6 +14,7 @@ public class GameSessionManager : NetworkBehaviour
     public GameObject relayUI;
     public GameObject controllerButtonUI;
     public WinLoseUI winLoseUIController;
+    public GameObject bestiaryUI;
 
     [Header("Doors")]
     public Door greenDoor;
@@ -26,9 +27,6 @@ public class GameSessionManager : NetworkBehaviour
     public ControllerButton blueButton;
     public ControllerButton orangeButton;
     public ControllerButton purpleButton;
-
-    [Header("Lever Puzzle")]
-    public LeverStation leverStation;
 
     [Header("Current Monster")]
     public MonsterType currentMonsterType = MonsterType.BloodDemon;
@@ -57,6 +55,10 @@ public class GameSessionManager : NetworkBehaviour
     private NetworkVariable<SessionState> sessionState = new NetworkVariable<SessionState>(SessionState.Connecting);
 
     private bool monsterDeathAnimPlaying; // blocks the win check until PlayTrappedAnimation's callback fires
+    
+    [Header("Level Facts")]
+    public bool moreThanFiveRooms;
+    public bool blueFullFogPresent;
 
     public bool IsPlaying => sessionState.Value == SessionState.Playing;
 
@@ -76,32 +78,11 @@ public class GameSessionManager : NetworkBehaviour
         explorerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         controllerConnected.OnValueChanged += (_, _) => RefreshConnectionUI();
         sessionState.OnValueChanged += (_, _) => RefreshSessionUI();
-<<<<<<< HEAD
 
-        greenActivated.OnValueChanged += (_, v) => { if (IsLocalController) greenButton.SetActivated(v); };
-        blueActivated.OnValueChanged += (_, v) => { if (IsLocalController) blueButton.SetActivated(v); };
-        orangeActivated.OnValueChanged += (_, v) => { if (IsLocalController) orangeButton.SetActivated(v); };
-        purpleActivated.OnValueChanged += (_, v) => { if (IsLocalController) purpleButton.SetActivated(v); };
-=======
-        
-        // OLD CODE: Code panels showed when activated
-        //greenActivated.OnValueChanged += (_, v) => greenCodePanel.SetVisible(v);
-        //blueActivated.OnValueChanged += (_, v) => blueCodePanel.SetVisible(v);
-        //orangeActivated.OnValueChanged += (_, v) => orangeCodePanel.SetVisible(v);
-        //purpleActivated.OnValueChanged += (_, v) => purpleCodePanel.SetVisible(v);
-        
-        // OLD CODE: Buttons activated only after code verification
-        //greenCodeVerified.OnValueChanged += (_, v) => { greenButton.SetActivated(v); if (v) greenCodePanel.Hide(); };
-        //blueCodeVerified.OnValueChanged += (_, v) => { blueButton.SetActivated(v); if (v) blueCodePanel.Hide(); };
-        //orangeCodeVerified.OnValueChanged += (_, v) => { orangeButton.SetActivated(v); if (v) orangeCodePanel.Hide(); };
-        //purpleCodeVerified.OnValueChanged += (_, v) => { purpleButton.SetActivated(v); if (v) purpleCodePanel.Hide(); };
-
-        // NEW CODE: Buttons activate directly when key is collected
         greenActivated.OnValueChanged += (_, v) => greenButton.SetActivated(v);
         blueActivated.OnValueChanged += (_, v) => blueButton.SetActivated(v);
         orangeActivated.OnValueChanged += (_, v) => orangeButton.SetActivated(v);
         purpleActivated.OnValueChanged += (_, v) => purpleButton.SetActivated(v);
->>>>>>> Thomas-28-07-2026
 
         greenOpen.OnValueChanged += (_, v) => greenDoor.SetOpen(v);
         blueOpen.OnValueChanged += (_, v) => blueDoor.SetOpen(v);
@@ -110,7 +91,6 @@ public class GameSessionManager : NetworkBehaviour
 
         RefreshConnectionUI();
         RefreshSessionUI();
-<<<<<<< HEAD
 
         if (IsLocalController)
         {
@@ -119,26 +99,6 @@ public class GameSessionManager : NetworkBehaviour
             orangeButton.SetActivated(orangeActivated.Value);
             purpleButton.SetActivated(purpleActivated.Value);
         }
-=======
-        
-        // OLD CODE: Initialize code panels visibility
-        //greenCodePanel.SetVisible(greenActivated.Value);
-        //blueCodePanel.SetVisible(blueActivated.Value);
-        //orangeCodePanel.SetVisible(orangeActivated.Value);
-        //purpleCodePanel.SetVisible(purpleActivated.Value);
-
-        // OLD CODE: Initialize buttons based on code verification
-        //greenButton.SetActivated(greenCodeVerified.Value);
-        //blueButton.SetActivated(blueCodeVerified.Value);
-        //orangeButton.SetActivated(orangeCodeVerified.Value);
-        //purpleButton.SetActivated(purpleCodeVerified.Value);
-
-        // NEW CODE: Initialize buttons based on key collection (activated state)
-        greenButton.SetActivated(greenActivated.Value);
-        blueButton.SetActivated(blueActivated.Value);
-        orangeButton.SetActivated(orangeActivated.Value);
-        purpleButton.SetActivated(purpleActivated.Value);
->>>>>>> Thomas-28-07-2026
 
         greenDoor.SetOpen(greenOpen.Value);
         blueDoor.SetOpen(blueOpen.Value);
@@ -158,8 +118,9 @@ public class GameSessionManager : NetworkBehaviour
         if (relayUI) relayUI.SetActive(!bothConnected);
 
         bool isLocalController = NetworkManager.Singleton.LocalClient != null &&
-                                  NetworkManager.Singleton.LocalClient.PlayerObject == null;
+                                 NetworkManager.Singleton.LocalClient.PlayerObject == null;
         if (controllerButtonUI) controllerButtonUI.SetActive(bothConnected && isLocalController);
+        if (bestiaryUI) bestiaryUI.SetActive(bothConnected && isLocalController); // NEW
     }
 
     private void RefreshSessionUI()
@@ -191,39 +152,13 @@ public class GameSessionManager : NetworkBehaviour
 
     [ServerRpc(RequireOwnership = false)]
     public void RegisterControllerServerRpc() { controllerConnected.Value = true; }
-
-<<<<<<< HEAD
-    public void CollectKey(DoorColor color)
-    {
-        if (!IsServer) return;
-        SetActivated(color, true);
-=======
-    [ServerRpc(RequireOwnership = false)]
-
-    public void ActivateColorServerRpc(DoorColor color) 
-    { 
-        SetActivated(color, true);
-    }
-
-    // NEW: Called by switchboards when all switches are on/off
-    [ServerRpc(RequireOwnership = false)]
-    public void SetSwitchboardCompleteServerRpc(DoorColor color, bool complete)
-    {
-        Debug.Log($"[GameSessionManager] Switchboard {color} complete: {complete}");
-        SetActivated(color, complete);
->>>>>>> Thomas-28-07-2026
-    }
+   
 
     [ServerRpc(RequireOwnership = false)]
     public void SetDoorHeldServerRpc(DoorColor color, bool held)
     {
-<<<<<<< HEAD
         if (!GetActivated(color)) return;
-=======
-        // NEW CODE: Only requires activation (switchboard complete OR key collected)
-        if (!GetActivated(color)) return;
-        
->>>>>>> Thomas-28-07-2026
+
         SetOpen(color, held);
         CheckWinCondition();
     }
@@ -268,17 +203,6 @@ public class GameSessionManager : NetworkBehaviour
             sessionState.Value = SessionState.Won;
     }
 
-    private bool GetActivated(DoorColor color)
-    {
-        switch (color)
-        {
-            case DoorColor.Green: return greenActivated.Value;
-            case DoorColor.Blue: return blueActivated.Value;
-            case DoorColor.Orange: return orangeActivated.Value;
-            default: return purpleActivated.Value;
-        }
-    }
-
     private void SetActivated(DoorColor color, bool value)
     {
         switch (color)
@@ -289,10 +213,7 @@ public class GameSessionManager : NetworkBehaviour
             default: purpleActivated.Value = value; break;
         }
     }
-<<<<<<< HEAD
-=======
-    
-    // NEW CODE: Helper to check if door is activated (key collected)
+
     private bool GetActivated(DoorColor color)
     {
         switch (color)
@@ -303,41 +224,6 @@ public class GameSessionManager : NetworkBehaviour
             default: return purpleActivated.Value;
         }
     }
-    
-    // OLD CODE: Code verification getters/setters - keeping for potential future use
-    //private bool GetCodeVerified(DoorColor color)
-    //{
-    //    switch (color)
-    //    {
-    //        case DoorColor.Green: return greenCodeVerified.Value;
-    //        case DoorColor.Blue: return blueCodeVerified.Value;
-    //        case DoorColor.Orange: return orangeCodeVerified.Value;
-    //        default: return purpleCodeVerified.Value;
-    //    }
-    //}
-    //
-    //private void SetCodeVerified(DoorColor color, bool value)
-    //{
-    //    switch (color)
-    //    {
-    //        case DoorColor.Green: greenCodeVerified.Value = value; break;
-    //        case DoorColor.Blue: blueCodeVerified.Value = value; break;
-    //        case DoorColor.Orange: orangeCodeVerified.Value = value; break;
-    //        default: purpleCodeVerified.Value = value; break;
-    //    }
-    //}
-    //
-    //private string GetDoorCode(DoorColor color)
-    //{
-    //    switch (color)
-    //    {
-    //        case DoorColor.Green: return GreenCode;
-    //        case DoorColor.Blue: return BlueCode;
-    //        case DoorColor.Orange: return OrangeCode;
-    //        default: return PurpleCode;
-    //    }
-    //}
->>>>>>> Thomas-28-07-2026
 
     private void SetOpen(DoorColor color, bool value)
     {
@@ -368,12 +254,17 @@ public class GameSessionManager : NetworkBehaviour
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 
-
     private void ShutdownHost()
     {
         NetworkManager.Singleton.Shutdown();
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+    }
+    
+    public void CollectKey(DoorColor color)
+    {
+        if (!IsServer) return;
+        SetActivated(color, true);
     }
 
     public void RespawnLevel() { RespawnLevelServerRpc(); }
@@ -391,7 +282,7 @@ public class GameSessionManager : NetworkBehaviour
         orangeOpen.Value = false;
         purpleOpen.Value = false;
 
-        if (leverStation) leverStation.ResetPuzzle();
+        Switchboard.ResetAllBoards();
 
         monsterDeathAnimPlaying = false;
 

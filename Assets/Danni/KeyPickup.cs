@@ -18,7 +18,7 @@ public class KeyPickup : NetworkBehaviour
         if (!IsServer) return;
         if (!other.CompareTag("Player")) return;
 
-        GameSessionManager.Instance.CollectKey(color);
+        // GameSessionManager.Instance.CollectKey(color);
 
         NetworkObject netObj = GetComponent<NetworkObject>();
         if (netObj) netObj.Despawn();
