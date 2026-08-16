@@ -723,16 +723,23 @@ public class AStar3D : MonoBehaviour
     /// <param name="neighborOffsetAlongY"></param>
     /// <param name="neighborOffsetAlongZ"></param>
     /// <returns></returns>
+    // private bool IsMoveAllowedByLadder(
+    //     int currentIndexX, int currentIndexY, int currentIndexZ,
+    //     int nextIndexX, int nextIndexY, int nextIndexZ,
+    //     int neighborOffsetAlongX, int neighborOffsetAlongY, int neighborOffsetAlongZ)
+    // {
+    //     if (neighborOffsetAlongY == 0) return true;
+    //
+    //     bool currentInsideLadder = CellContainsComponent<Ladder>(currentIndexX, currentIndexY, currentIndexZ);
+    //     bool nextInsideLadder = CellContainsComponent<Ladder>(nextIndexX, nextIndexY, nextIndexZ);
+    //     return currentInsideLadder && nextInsideLadder;
+    // }
     private bool IsMoveAllowedByLadder(
         int currentIndexX, int currentIndexY, int currentIndexZ,
         int nextIndexX, int nextIndexY, int nextIndexZ,
         int neighborOffsetAlongX, int neighborOffsetAlongY, int neighborOffsetAlongZ)
     {
-        if (neighborOffsetAlongY == 0) return true;
-
-        bool currentInsideLadder = CellContainsComponent<Ladder>(currentIndexX, currentIndexY, currentIndexZ);
-        bool nextInsideLadder = CellContainsComponent<Ladder>(nextIndexX, nextIndexY, nextIndexZ);
-        return currentInsideLadder && nextInsideLadder;
+        return true;
     }
     private bool CellContainsComponent<Type>(int cellIndexX, int cellIndexY, int cellIndexZ) where Type : Component //gets the component parameter
     {

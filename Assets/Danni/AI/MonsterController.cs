@@ -169,11 +169,19 @@ public class MonsterController : NetworkBehaviour
     private void Repath()
     {
         if (!astar.grid) astar.grid = FindFirstObjectByType<Grid3D>();
+        if (!astar.grid)
+        {
+            Debug.LogWarning("[MonsterController] No Grid3D found in scene!");
+            return;
+        }
+
         astar.start = transform;
         astar.target = player;
         astar.RunAStarImmediately();
         currentPath = astar.GetWorldPath();
         waypointIndex = 0;
+
+        Debug.Log($"[MonsterController] Repath: grid={astar.grid.name}, pathPoints={(currentPath != null ? currentPath.Count : 0)}");
     }
  
     private void FollowPath()
