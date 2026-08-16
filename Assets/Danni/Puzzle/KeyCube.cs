@@ -6,6 +6,7 @@ public class KeyCube : NetworkBehaviour
     public DoorColor color;
     public Renderer keyRenderer;
     public Collider keyCollider;
+    public Renderer keyVisual;
 
     private NetworkVariable<bool> isActive = new NetworkVariable<bool>(false);
     private bool collected;
@@ -13,6 +14,7 @@ public class KeyCube : NetworkBehaviour
     private void Awake()
     {
         if (!keyRenderer) keyRenderer = GetComponent<Renderer>();
+        if (!keyVisual) keyVisual = GetComponentInChildren<Renderer>();
         if (!keyCollider) keyCollider = GetComponent<Collider>();
     }
 

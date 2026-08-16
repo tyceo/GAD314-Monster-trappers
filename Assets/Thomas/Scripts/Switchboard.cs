@@ -220,7 +220,11 @@ public class Switchboard : NetworkBehaviour
     private void CheckAndNotifySolved()
     {
         if (!IsServer) return;
-        if (keyCube) keyCube.SetSolvedState(IsSolved());
+
+        bool solved = IsSolved();
+        Debug.Log($"[Switchboard {boardColor}] Check: switches=[{switch1On.Value},{switch2On.Value},{switch3On.Value},{switch4On.Value}] solved={solved} keyCube={(keyCube ? keyCube.name : "NULL")}");
+
+        if (keyCube) keyCube.SetSolvedState(solved);
     }
 
     public bool IsSolved()
@@ -238,22 +242,13 @@ public class Switchboard : NetworkBehaviour
 
         switch (boardColor)
         {
-            case DoorColor.Orange: return new bool[] { true, false, true, true };   // Up Down Up Up
-            case DoorColor.Green: return new bool[] { true, true, false, true };    // Up Up Down Up
-            case DoorColor.Purple: return new bool[] { false, false, true, false }; // Down Down Up Down
-            default: return new bool[] { false, false, false, false };             // Down Down Down Down
+            case DoorColor.Orange: return new bool[] { false, true, false, false }; // Up Down Up Up
+            case DoorColor.Green: return new bool[] { false, false, true, false };  // Up Up Down Up
+            case DoorColor.Purple: return new bool[] { true, true, false, true };   // Down Down Up Down
+            default: return new bool[] { true, true, true, true };                 // Blue: Down Down Down Down
         }
     }
-
-    private bool[] GetGreenPattern()
-    {
-        return new bool[] { true, true, false, true };
-    }
-
-    private bool[] Invert(bool[] pattern)
-    {
-        return new bool[] { !pattern[0], !pattern[1], !pattern[2], !pattern[3] };
-    }
+    
 
     [ServerRpc(RequireOwnership = false)]
     public void ToggleSwitchServerRpc(int switchNumber)

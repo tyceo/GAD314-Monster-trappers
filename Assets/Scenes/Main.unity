@@ -1348,7 +1348,7 @@ Transform:
   m_GameObject: {fileID: 148522021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.9, y: -31.5, z: -406.4}
+  m_LocalPosition: {x: -28.9, y: 0, z: -406.4}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3701,6 +3701,7 @@ MonoBehaviour:
   closeButton: {fileID: 288277131}
   openButton: {fileID: 1503892164}
   bestiaryFlipbookPanel: {fileID: 1993392685}
+  forcedSortingOrder: 1000
 --- !u!1 &299108021
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,7 +6716,7 @@ Transform:
   m_GameObject: {fileID: 547393194}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.7, y: -31.5, z: -468.3}
+  m_LocalPosition: {x: -54.7, y: 0, z: -468.3}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7691,7 +7692,7 @@ Transform:
   m_GameObject: {fileID: 572484890}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.1, y: -31.5, z: -345.9}
+  m_LocalPosition: {x: 33.1, y: 0, z: -345.9}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16845,7 +16846,7 @@ Transform:
   m_GameObject: {fileID: 1442558702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.5, y: -31.5, z: -234.5}
+  m_LocalPosition: {x: 29.5, y: 0, z: -234.5}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
