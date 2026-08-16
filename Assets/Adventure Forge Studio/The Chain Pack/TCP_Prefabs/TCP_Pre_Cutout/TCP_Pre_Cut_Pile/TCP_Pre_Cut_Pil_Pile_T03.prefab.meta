@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 9d94d10e11eda8943812da664a304582
+labels:
+- anchor
+- chains
+- cutout
+- hooks
+- metal
+- misc
+- pile
+- prop
+- rust
+- shackle
+timeCreated: 1527184788
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/The Chain Pack/TCP_Prefabs/TCP_Pre_Cutout/TCP_Pre_Cut_Pile/TCP_Pre_Cut_Pil_Pile_T03.prefab
+  uploadId: 248780

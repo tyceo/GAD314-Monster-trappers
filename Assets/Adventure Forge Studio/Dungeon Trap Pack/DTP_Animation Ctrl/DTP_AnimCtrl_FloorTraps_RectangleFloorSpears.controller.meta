@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 20a79eb7d695dcc4496cbacdeca7a62f
+timeCreated: 1490778582
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_FloorTraps_RectangleFloorSpears.controller
+  uploadId: 248780

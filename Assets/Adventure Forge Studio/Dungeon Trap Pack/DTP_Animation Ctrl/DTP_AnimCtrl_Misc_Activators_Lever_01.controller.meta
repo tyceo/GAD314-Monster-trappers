@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad853af0547769141a953927c5792251
+timeCreated: 1490779616
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_Misc_Activators_Lever_01.controller
+  uploadId: 248780

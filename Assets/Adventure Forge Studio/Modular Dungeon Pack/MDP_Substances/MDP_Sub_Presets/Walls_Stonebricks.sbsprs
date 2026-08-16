@@ -1,0 +1,15 @@
+<sbspresets count="1" formatversion="1.1">
+  <sbspreset pkgurl="pkg://Walls_Stonebricks" label="" >
+  <presetinput identifier="$outputsize" uid="4106388923" type="8" value="11,11" />
+  <presetinput identifier="Brick_Shape_Height_slope_amount" uid="2159438738" type="3" value="0.449,-0.483,0.423,1" />
+  <presetinput identifier="Brick_Pattern_Number_of_bricks" uid="2159438736" type="8" value="4,12" />
+  <presetinput identifier="Brick_Pattern_Symmetry" uid="2159438742" type="1" value="0.387,0.552" />
+  <presetinput identifier="Brick_Pattern_Horizontal_gap_offset" uid="2159438740" type="1" value="0.367,0.81" />
+  <presetinput identifier="Crack_parameters_Number_Of_Cracks" uid="2159436924" type="4" value="10" />
+  <presetinput identifier="Crack_parameters_Intensity" uid="2159436914" type="0" value="0.28" />
+  <presetinput identifier="Crack_parameters_Crack_Edge_Bevel" uid="2159436904" type="0" value="0.539" />
+  <presetinput identifier="Moss_Moss_Roughness" uid="2159436908" type="0" value="0.52" />
+  <presetinput identifier="Moss_Invert_Moss_Roughness" uid="2159436896" type="4" value="1" />
+  <presetinput identifier="Moss_Blending_Blending_Position" uid="2159436900" type="0" value="0.13" />
+ </sbspreset>
+</sbspresets>

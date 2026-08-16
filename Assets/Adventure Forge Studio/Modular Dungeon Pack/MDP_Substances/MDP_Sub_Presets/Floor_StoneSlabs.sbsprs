@@ -1,0 +1,9 @@
+<sbspresets count="1" formatversion="1.1">
+  <sbspreset pkgurl="pkg://Floor_Stoneslabs" label="" >
+  <presetinput identifier="$outputsize" uid="1174966955" type="8" value="11,11" />
+  <presetinput identifier="Moss_Blending_Blending_Position" uid="847007539" type="0" value="0.471" />
+  <presetinput identifier="Stone_Slabs_Number_Of_Cells" uid="847007541" type="4" value="8" />
+  <presetinput identifier="Cracks_Cracks_Blending_Amount" uid="847007515" type="0" value="0.083" />
+  <presetinput identifier="Cracks_Number_Of_Cells" uid="847007513" type="4" value="10" />
+ </sbspreset>
+</sbspresets>

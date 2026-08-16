@@ -2,6 +2,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+<<<<<<< HEAD
 /*public class PlayerController : NetworkBehaviour
 {
     [Header("Movement")]
@@ -230,6 +231,8 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+=======
+>>>>>>> Thomas-28-07-2026
 public class PlayerController : NetworkBehaviour
 {
     [Header("Movement")]
@@ -252,6 +255,11 @@ public class PlayerController : NetworkBehaviour
 
     [Header("Respawn")]
     [SerializeField] private Vector3 respawnPosition = new Vector3(3.35f, 1.83f, -4.38f);
+    
+    [Header("Interaction")]
+    [SerializeField] private float interactionDistance = 2f;
+    [SerializeField] private LayerMask interactableLayer;
+    private InputAction interactAction;
 
     public override void OnNetworkSpawn()
     {
@@ -278,9 +286,14 @@ public class PlayerController : NetworkBehaviour
         lookAction = new InputAction("Look", binding: "<Mouse>/delta");
         jumpAction = new InputAction("Jump", binding: "<Keyboard>/space");
 
+        // NEW: Interact action (E key or gamepad button)
+        interactAction = new InputAction("Interact", binding: "<Keyboard>/e");
+        interactAction.AddBinding("<Gamepad>/buttonSouth"); // A/Cross button
+
         moveAction.Enable();
         lookAction.Enable();
         jumpAction.Enable();
+        interactAction.Enable();
     }
 
     public void GameEnded()
@@ -294,6 +307,7 @@ public class PlayerController : NetworkBehaviour
         moveAction?.Disable();
         lookAction?.Disable();
         jumpAction?.Disable();
+        interactAction?.Disable();
     }
 
     private void Awake()
@@ -305,6 +319,7 @@ public class PlayerController : NetworkBehaviour
     {
         HandleLook();
         HandleMovement();
+        HandleInteraction(); // NEW
     }
 
     private void HandleLook()
@@ -359,4 +374,83 @@ public class PlayerController : NetworkBehaviour
         if (!IsOwner) return;
         RespawnPlayer();
     }
+<<<<<<< HEAD
+=======
+
+    private void HandleInteraction()
+    {
+        if (interactAction.WasPressedThisFrame())
+        {
+            Ray ray = new Ray(cameraHolder.position, cameraHolder.forward);
+            if (Physics.Raycast(ray, out RaycastHit hit, interactionDistance, interactableLayer))
+            {
+                if (hit.collider.CompareTag("Switch"))
+                {
+                    // Find which switchboard this switch belongs to
+                    Switchboard switchboard = hit.collider.GetComponentInParent<Switchboard>();
+                    
+                    if (switchboard != null)
+                    {
+                        // Get the switch number from the object name
+                        string switchName = hit.collider.gameObject.name;
+                        int switchNumber = 0;
+                        
+                        if (switchName.Contains("1")) switchNumber = 1;
+                        else if (switchName.Contains("2")) switchNumber = 2;
+                        else if (switchName.Contains("3")) switchNumber = 3;
+                        else if (switchName.Contains("4")) switchNumber = 4;
+                        
+                        if (switchNumber > 0)
+                        {
+                            switchboard.ToggleSwitchServerRpc(switchNumber);
+                            Debug.Log($"[PlayerController] Toggled switch {switchNumber} on {switchboard.GetBoardColor()} switchboard");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("[PlayerController] Switch has no Switchboard parent!");
+                    }
+                }
+            }
+        }
+    }
+    /*
+    [ServerRpc(RequireOwnership = false)]  // Add RequireOwnership = false
+    private void InteractWithSwitchServerRpc(int switchNumber)
+    {
+        // This now runs on the SERVER with server authority
+        Switchboard switchboard = FindFirstObjectByType<Switchboard>();
+        if (switchboard != null)
+        {
+            switchboard.ToggleSwitchOnServer(switchNumber);
+        }
+        else
+        {
+            Debug.LogWarning("[PlayerController] Switchboard not found!");
+        }
+    }
+    */
+
+    [ServerRpc]
+    private void CollectKeyServerRpc(DoorColor color)
+    {
+        GameObject key = null;
+        switch (color)
+        {
+            case DoorColor.Green: key = GameObject.Find("GreenKey"); break;
+            case DoorColor.Blue: key = GameObject.Find("BlueKey"); break;
+            case DoorColor.Purple: key = GameObject.Find("PurpleKey"); break;
+            case DoorColor.Orange: key = GameObject.Find("OrangeKey"); break;
+        }
+
+        if (key != null)
+        {
+            NetworkObject keyNetObj = key.GetComponent<NetworkObject>();
+            if (keyNetObj != null) keyNetObj.Despawn();
+            else Destroy(key);
+        }
+
+        GameSessionManager.Instance.ActivateColorServerRpc(color);
+    }
+>>>>>>> Thomas-28-07-2026
 }

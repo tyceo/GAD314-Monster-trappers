@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8997d44b85f201d4583c6ebb4a3c022d
+timeCreated: 1490699507
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Prefabs/DTP_Pre_WallTraps/DTP_Pre_WallTraps_Wallblades.prefab
+  uploadId: 248780

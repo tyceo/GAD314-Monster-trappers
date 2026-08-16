@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6b511f57acff9eb46950d627dd5104d8
+timeCreated: 1490778030
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Animation Ctrl/DTP_AnimCtrl_CeilingTraps_SwingingSpikeClub.controller
+  uploadId: 248780

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a8090c120b9a7e4c867d32e3e2f54f0
+timeCreated: 1490780636
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Prefabs/DTP_Pre_Misc/DTP_Pre_Misc_Activators_PressurePlate_01.prefab
+  uploadId: 248780

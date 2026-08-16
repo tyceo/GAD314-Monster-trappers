@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 10c93a59e79c9bc42a04b547d87a4a69
+timeCreated: 1489929649
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Dungeon Trap Pack/DTP_Particles/DTP_Par_Sparks.prefab
+  uploadId: 248780

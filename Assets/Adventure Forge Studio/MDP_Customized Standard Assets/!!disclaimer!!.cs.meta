@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e79bc0da845fba048add08c38319298d
+timeCreated: 1483442721
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/MDP_Customized Standard Assets/!!disclaimer!!.cs
+  uploadId: 248780

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ed6dda9be8b38b46899eb29a3ff5431
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Scene/NonSubstance_DemoScene/LightingData.asset
+  uploadId: 248780

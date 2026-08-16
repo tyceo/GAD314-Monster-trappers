@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 523100b221413b944b5656ca09b190eb
+timeCreated: 1483223263
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/README.txt
+  uploadId: 248780

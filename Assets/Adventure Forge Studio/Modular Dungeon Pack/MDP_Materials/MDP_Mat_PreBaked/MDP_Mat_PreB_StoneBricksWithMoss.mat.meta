@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08d0bf2015de4f348b1a36398179790c
+timeCreated: 1495998268
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79494
+  packageName: Modular Dungeon Pack
+  packageVersion: 1.4.1
+  assetPath: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_StoneBricksWithMoss.mat
+  uploadId: 248780
