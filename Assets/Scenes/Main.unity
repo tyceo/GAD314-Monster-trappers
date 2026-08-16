@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: caa3e1f6dae84364ba8d20e38e0e9d2f, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b2b80a480f5cf024dbd81414bfe058a6, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3636,9 +3636,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634129300}
     m_Modifications:
+    - target: {fileID: 1000010079080476, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010324702178, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010401122892, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011375502760, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011659362980, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1000012226093750, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
       propertyPath: m_Name
       value: MDP_Pre_NonSub_Lig_WallTourch_T01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012816990848, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013899766318, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011174732272, guid: 6e9fca42c7515e849b9745b3475b277c, type: 3}
       propertyPath: m_RootOrder
@@ -10544,7 +10572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &791217611
 Transform:
   m_ObjectHideFlags: 0
@@ -10554,7 +10582,7 @@ Transform:
   m_GameObject: {fileID: 791217610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.9, y: -4.81, z: -59.28}
+  m_LocalPosition: {x: -0, y: 2.4, z: -359}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23005,7 +23033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1665675633
 Transform:
   m_ObjectHideFlags: 0
@@ -23015,7 +23043,7 @@ Transform:
   m_GameObject: {fileID: 1665675632}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -4.81, z: -77.9}
+  m_LocalPosition: {x: 51.4, y: 2.4, z: -377.61996}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23159,7 +23187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1674254945
 Transform:
   m_ObjectHideFlags: 0
@@ -23169,7 +23197,7 @@ Transform:
   m_GameObject: {fileID: 1674254944}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.6, y: -4.81, z: -46.9}
+  m_LocalPosition: {x: -8.699997, y: 2.4, z: -346.61996}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23313,7 +23341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1678606597
 Transform:
   m_ObjectHideFlags: 0
@@ -23323,7 +23351,7 @@ Transform:
   m_GameObject: {fileID: 1678606596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.9, y: -4.81, z: -34.09}
+  m_LocalPosition: {x: 0, y: 2.4, z: -333.80997}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28256,13 +28284,14 @@ GameObject:
   - component: {fileID: 8358029827235436965}
   - component: {fileID: 1378293048251502723}
   - component: {fileID: 1302523066820347481}
-  m_Layer: 0
-  m_Name: SwitchOff1.003
-  m_TagString: Untagged
+  - component: {fileID: 8358029827235436966}
+  m_Layer: 7
+  m_Name: SwitchOff1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &120258049828764293
 Transform:
   m_ObjectHideFlags: 0
@@ -28490,9 +28519,10 @@ GameObject:
   - component: {fileID: 4411353380566305319}
   - component: {fileID: 5372893758927892331}
   - component: {fileID: 662195378028598288}
-  m_Layer: 0
-  m_Name: SwitchOff4.003
-  m_TagString: Untagged
+  - component: {fileID: 5372893758927892332}
+  m_Layer: 7
+  m_Name: SwitchOff4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28523,9 +28553,10 @@ GameObject:
   - component: {fileID: 3883753467614414421}
   - component: {fileID: 3439051159872080473}
   - component: {fileID: 2094918443912742920}
-  m_Layer: 0
+  - component: {fileID: 3883753467614414422}
+  m_Layer: 7
   m_Name: SwitchOff3
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28541,13 +28572,14 @@ GameObject:
   - component: {fileID: 1688729385148496452}
   - component: {fileID: 2511522716735681267}
   - component: {fileID: 7114710044054524377}
-  m_Layer: 0
-  m_Name: SwitchOn3.003
-  m_TagString: Untagged
+  - component: {fileID: 7114710044054524378}
+  m_Layer: 7
+  m_Name: SwitchOn3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &603852488715525538
 GameObject:
   m_ObjectHideFlags: 0
@@ -28578,13 +28610,14 @@ GameObject:
   - component: {fileID: 7845974587215686528}
   - component: {fileID: 6135850447059583250}
   - component: {fileID: 4786939128579828004}
-  m_Layer: 0
+  - component: {fileID: 7845974587215686529}
+  m_Layer: 7
   m_Name: SwitchOn1
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &662195378028598288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28653,13 +28686,14 @@ GameObject:
   - component: {fileID: 5028408844384969476}
   - component: {fileID: 6438194560857518419}
   - component: {fileID: 6551314447569140778}
-  m_Layer: 0
+  - component: {fileID: 6551314447569140779}
+  m_Layer: 7
   m_Name: SwitchOn3
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &845209181411327541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28782,13 +28816,14 @@ GameObject:
   - component: {fileID: 6781605416720434976}
   - component: {fileID: 6390572488808356911}
   - component: {fileID: 3665033893882382998}
-  m_Layer: 0
-  m_Name: SwitchOff3.002
-  m_TagString: Untagged
+  - component: {fileID: 6781605416720434977}
+  m_Layer: 7
+  m_Name: SwitchOff3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1106912247160719277
 GameObject:
   m_ObjectHideFlags: 0
@@ -28800,9 +28835,10 @@ GameObject:
   - component: {fileID: 1797209927846760215}
   - component: {fileID: 6727927884691737245}
   - component: {fileID: 1760335442076478348}
-  m_Layer: 0
-  m_Name: SwitchOn3.001
-  m_TagString: Untagged
+  - component: {fileID: 6727927884691737246}
+  m_Layer: 7
+  m_Name: SwitchOn3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28833,6 +28869,8 @@ GameObject:
   - component: {fileID: 6326968779384436128}
   - component: {fileID: 5571319117549734615}
   - component: {fileID: 2000240477483962737}
+  - component: {fileID: 6326968779384436129}
+  - component: {fileID: 6326968779384436130}
   m_Layer: 0
   m_Name: Switch board Purple
   m_TagString: Untagged
@@ -28897,8 +28935,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915664328817184999}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -150.7, y: 4.73, z: 17.8}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -131.7, y: 7.6, z: -358.55}
   m_LocalScale: {x: 5.16, y: 5.16, z: 5.16}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -28907,7 +28945,7 @@ Transform:
   - {fileID: 6326968779384436128}
   - {fileID: 5258972419233646038}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &1302523066820347481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28976,13 +29014,14 @@ GameObject:
   - component: {fileID: 7876271687938917796}
   - component: {fileID: 5184880319661418600}
   - component: {fileID: 3308625739745846389}
-  m_Layer: 0
-  m_Name: SwitchOn2.003
-  m_TagString: Untagged
+  - component: {fileID: 7876271687938917797}
+  m_Layer: 7
+  m_Name: SwitchOn2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &1461497557334572927
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29025,9 +29064,10 @@ GameObject:
   - component: {fileID: 4485280673858521976}
   - component: {fileID: 4619358162697779179}
   - component: {fileID: 3261739917103136606}
-  m_Layer: 0
-  m_Name: SwitchOn1.003
-  m_TagString: Untagged
+  - component: {fileID: 4619358162697779180}
+  m_Layer: 7
+  m_Name: SwitchOn1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29250,9 +29290,10 @@ GameObject:
   - component: {fileID: 2419019267100730528}
   - component: {fileID: 2315390588318853153}
   - component: {fileID: 212256300701349708}
-  m_Layer: 0
-  m_Name: SwitchOff3.003
-  m_TagString: Untagged
+  - component: {fileID: 2419019267100730529}
+  m_Layer: 7
+  m_Name: SwitchOff3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29429,6 +29470,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6326968779384436128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2419019267100730529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006847725478446789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!23 &2433097522967234053
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29497,13 +29559,14 @@ GameObject:
   - component: {fileID: 5802076893902489282}
   - component: {fileID: 4886900596136959132}
   - component: {fileID: 2945751822559449594}
-  m_Layer: 0
-  m_Name: SwitchOff3.001
-  m_TagString: Untagged
+  - component: {fileID: 5802076893902489283}
+  m_Layer: 7
+  m_Name: SwitchOff3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &2511522716735681267
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -30345,13 +30408,14 @@ GameObject:
   - component: {fileID: 4815231728363108323}
   - component: {fileID: 2761295131696713472}
   - component: {fileID: 6453136177328087403}
-  m_Layer: 0
-  m_Name: SwitchOn2.002
-  m_TagString: Untagged
+  - component: {fileID: 6453136177328087404}
+  m_Layer: 7
+  m_Name: SwitchOn2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &3067999821430949172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30472,9 +30536,10 @@ GameObject:
   - component: {fileID: 5222710479269083211}
   - component: {fileID: 1920407187202098566}
   - component: {fileID: 6271041764442930651}
-  m_Layer: 0
-  m_Name: SwitchOff2.002
-  m_TagString: Untagged
+  - component: {fileID: 6271041764442930652}
+  m_Layer: 7
+  m_Name: SwitchOff2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30664,13 +30729,14 @@ GameObject:
   - component: {fileID: 5127690259654853116}
   - component: {fileID: 7642375562484792203}
   - component: {fileID: 5139464712913727770}
-  m_Layer: 0
+  - component: {fileID: 7642375562484792204}
+  m_Layer: 7
   m_Name: SwitchOn2
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3551980019705950167
 GameObject:
   m_ObjectHideFlags: 0
@@ -30682,13 +30748,35 @@ GameObject:
   - component: {fileID: 2290155906965257358}
   - component: {fileID: 999070104414006356}
   - component: {fileID: 2270143935681930537}
-  m_Layer: 0
-  m_Name: SwitchOn4.003
-  m_TagString: Untagged
+  - component: {fileID: 3551980019705950168}
+  m_Layer: 7
+  m_Name: SwitchOn4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!65 &3551980019705950168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551980019705950167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.00026543014}
 --- !u!23 &3665033893882382998
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30841,6 +30929,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5258972419233646038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3883753467614414422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503541506495336352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: -0.00000011920929, z: 0.00026543386}
 --- !u!4 &4040679431647521085
 Transform:
   m_ObjectHideFlags: 0
@@ -30867,13 +30976,14 @@ GameObject:
   - component: {fileID: 499236664052796650}
   - component: {fileID: 4121168272035166848}
   - component: {fileID: 2778545080066032108}
-  m_Layer: 0
-  m_Name: SwitchOff1.002
-  m_TagString: Untagged
+  - component: {fileID: 4121168272035166849}
+  m_Layer: 7
+  m_Name: SwitchOff1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4073467944632622435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30908,6 +31018,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4061040568531426152}
   m_Mesh: {fileID: 4625964146201190647, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &4121168272035166849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4061040568531426152}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!23 &4188394769289443566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30983,9 +31114,10 @@ GameObject:
   - component: {fileID: 4558265088599480780}
   - component: {fileID: 7602540886734098610}
   - component: {fileID: 5319093484250565929}
-  m_Layer: 0
-  m_Name: SwitchOn1.002
-  m_TagString: Untagged
+  - component: {fileID: 7602540886734098611}
+  m_Layer: 7
+  m_Name: SwitchOn1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31199,6 +31331,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659120996629685566}
   m_Mesh: {fileID: -6847472212633221427, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &4619358162697779180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659120996629685566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!23 &4720606497913910075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31429,13 +31582,14 @@ GameObject:
   - component: {fileID: 6814519083808631136}
   - component: {fileID: 6828601651977949458}
   - component: {fileID: 8571039525760471103}
-  m_Layer: 0
-  m_Name: SwitchOff1.001
-  m_TagString: Untagged
+  - component: {fileID: 8571039525760471104}
+  m_Layer: 7
+  m_Name: SwitchOff1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &4855179209511146887
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31463,13 +31617,14 @@ GameObject:
   - component: {fileID: 8451072822012886793}
   - component: {fileID: 2980767630858350382}
   - component: {fileID: 2433097522967234053}
-  m_Layer: 0
+  - component: {fileID: 8451072822012886794}
+  m_Layer: 7
   m_Name: SwitchOn4
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4971610974217274292
 GameObject:
   m_ObjectHideFlags: 0
@@ -31481,9 +31636,10 @@ GameObject:
   - component: {fileID: 4308180428818331009}
   - component: {fileID: 2151506978129122976}
   - component: {fileID: 5397602729219310582}
-  m_Layer: 0
-  m_Name: SwitchOff4.002
-  m_TagString: Untagged
+  - component: {fileID: 5397602729219310583}
+  m_Layer: 7
+  m_Name: SwitchOff4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31670,6 +31826,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449011770986229912}
   m_Mesh: {fileID: 2996983932646836373, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &5372893758927892332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449011770986229912}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!23 &5397602729219310582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31719,6 +31896,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5397602729219310583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971610974217274292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543014}
 --- !u!1 &5438696399454885807
 GameObject:
   m_ObjectHideFlags: 0
@@ -31730,6 +31928,8 @@ GameObject:
   - component: {fileID: 1607934549465189704}
   - component: {fileID: 7464629405302248517}
   - component: {fileID: 7776269707160898509}
+  - component: {fileID: 7776269707160898510}
+  - component: {fileID: 7776269707160898511}
   m_Layer: 0
   m_Name: Switch board Blue
   m_TagString: Untagged
@@ -31748,13 +31948,35 @@ GameObject:
   - component: {fileID: 3373009868301894283}
   - component: {fileID: 4560462561688758806}
   - component: {fileID: 4188394769289443566}
-  m_Layer: 0
+  - component: {fileID: 5523510205743842921}
+  m_Layer: 7
   m_Name: SwitchOff2
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &5523510205743842921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523510205743842920}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: 0.00000011920929, z: 0.00026543014}
 --- !u!33 &5571319117549734615
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31804,6 +32026,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1607934549465189704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5802076893902489283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2498643266483615539}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!4 &5807345688501414287
 Transform:
   m_ObjectHideFlags: 0
@@ -31926,6 +32169,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6271041764442930652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3256949050843616764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -0.00000023841858, z: 0.00026543014}
 --- !u!1 &6301919373402754480
 GameObject:
   m_ObjectHideFlags: 0
@@ -31937,6 +32201,8 @@ GameObject:
   - component: {fileID: 7417427350909142540}
   - component: {fileID: 4482611335231437497}
   - component: {fileID: 17132966872300812}
+  - component: {fileID: 7417427350909142541}
+  - component: {fileID: 7417427350909142542}
   m_Layer: 0
   m_Name: Switch board Green
   m_TagString: Untagged
@@ -31986,6 +32252,54 @@ Transform:
   - {fileID: 2290155906965257358}
   m_Father: {fileID: 1287499675636157021}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6326968779384436129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168355829862000234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 31143340
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 8
+  AlwaysReplicateAsRoot: 1
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 1
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &6326968779384436130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168355829862000234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ce298c8bcd3a64582da32cc93af1b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Switchboard
+  ShowTopMostFoldoutHeaderGroup: 1
+  boardColor: 3
+  switchOff1: {fileID: 0}
+  switchOff2: {fileID: 0}
+  switchOff3: {fileID: 0}
+  switchOff4: {fileID: 0}
+  switchOn1: {fileID: 0}
+  switchOn2: {fileID: 0}
+  switchOn3: {fileID: 0}
+  switchOn4: {fileID: 0}
 --- !u!33 &6390572488808356911
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32051,6 +32365,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6453136177328087404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004311695109193062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 0.00000023841858, z: 0.0002654264}
 --- !u!222 &6457925594928050216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32130,6 +32465,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6551314447569140779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837908696735137968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: 0.00000011920929, z: 0.0002654264}
 --- !u!1 &6688000405542653193
 GameObject:
   m_ObjectHideFlags: 0
@@ -32175,6 +32531,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106912247160719277}
   m_Mesh: {fileID: 6372393191954767985, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &6727927884691737246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106912247160719277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!4 &6781605416720434976
 Transform:
   m_ObjectHideFlags: 0
@@ -32190,6 +32567,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7417427350909142540}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6781605416720434977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070690702563946633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -0.00000023841858, z: 0.00026543386}
 --- !u!4 &6814519083808631136
 Transform:
   m_ObjectHideFlags: 0
@@ -32224,6 +32622,8 @@ GameObject:
   - component: {fileID: 5258972419233646038}
   - component: {fileID: 5613725596069346581}
   - component: {fileID: 8971092351335371513}
+  - component: {fileID: 8971092351335371514}
+  - component: {fileID: 8971092351335371515}
   m_Layer: 0
   m_Name: Switch board Red
   m_TagString: Untagged
@@ -32280,6 +32680,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7114710044054524378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535084782621214635}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!223 &7195499252374077723
 Canvas:
   m_ObjectHideFlags: 0
@@ -32314,13 +32735,35 @@ GameObject:
   - component: {fileID: 3231728153699313174}
   - component: {fileID: 667176816310012139}
   - component: {fileID: 3067999821430949172}
-  m_Layer: 0
-  m_Name: SwitchOff4.001
-  m_TagString: Untagged
+  - component: {fileID: 7210961450048834168}
+  m_Layer: 7
+  m_Name: SwitchOff4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!65 &7210961450048834168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7210961450048834167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -0.00000023841858, z: 0.00026543014}
 --- !u!1 &7230673332530043984
 GameObject:
   m_ObjectHideFlags: 0
@@ -32361,6 +32804,54 @@ Transform:
   - {fileID: 5807345688501414287}
   m_Father: {fileID: 1287499675636157021}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7417427350909142541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301919373402754480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 1497049238
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 8
+  AlwaysReplicateAsRoot: 1
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 1
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &7417427350909142542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301919373402754480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ce298c8bcd3a64582da32cc93af1b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Switchboard
+  ShowTopMostFoldoutHeaderGroup: 1
+  boardColor: 0
+  switchOff1: {fileID: 0}
+  switchOff2: {fileID: 0}
+  switchOff3: {fileID: 0}
+  switchOff4: {fileID: 0}
+  switchOn1: {fileID: 0}
+  switchOn2: {fileID: 0}
+  switchOn3: {fileID: 0}
+  switchOn4: {fileID: 0}
 --- !u!33 &7464629405302248517
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32380,13 +32871,35 @@ GameObject:
   - component: {fileID: 4040679431647521085}
   - component: {fileID: 6463299535198749257}
   - component: {fileID: 4720606497913910075}
-  m_Layer: 0
-  m_Name: SwitchOn3.002
-  m_TagString: Untagged
+  - component: {fileID: 7479879915166708923}
+  m_Layer: 7
+  m_Name: SwitchOn3
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7479879915166708923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7479879915166708922}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 0.00000023841858, z: 0.0002654264}
 --- !u!1 &7499199768208366896
 GameObject:
   m_ObjectHideFlags: 0
@@ -32398,13 +32911,14 @@ GameObject:
   - component: {fileID: 5807345688501414287}
   - component: {fileID: 4535636104978218793}
   - component: {fileID: 8641525887347063392}
-  m_Layer: 0
-  m_Name: SwitchOn4.002
-  m_TagString: Untagged
+  - component: {fileID: 8641525887347063393}
+  m_Layer: 7
+  m_Name: SwitchOn4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &7525086763018407189
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32421,6 +32935,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4341410750831523641}
   m_Mesh: {fileID: 9172972288880345461, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &7602540886734098611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4341410750831523641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!1 &7630754847709785611
 GameObject:
   m_ObjectHideFlags: 0
@@ -32432,13 +32967,35 @@ GameObject:
   - component: {fileID: 120258049828764293}
   - component: {fileID: 6079544832119269666}
   - component: {fileID: 4822467584618461573}
-  m_Layer: 0
-  m_Name: SwitchOff2.001
-  m_TagString: Untagged
+  - component: {fileID: 7630754847709785612}
+  m_Layer: 7
+  m_Name: SwitchOff2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!65 &7630754847709785612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630754847709785611}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543014}
 --- !u!33 &7642375562484792203
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32447,6 +33004,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3470815860422928695}
   m_Mesh: {fileID: -5343104391545069138, guid: 7b5471a9e76600843800d3b172a11de6, type: 3}
+--- !u!65 &7642375562484792204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470815860422928695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: -0.00000011920929, z: 0.0002654264}
 --- !u!23 &7776269707160898509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32496,6 +33074,54 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7776269707160898510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438696399454885807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 4001027523
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 8
+  AlwaysReplicateAsRoot: 1
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 1
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &7776269707160898511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438696399454885807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ce298c8bcd3a64582da32cc93af1b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Switchboard
+  ShowTopMostFoldoutHeaderGroup: 1
+  boardColor: 1
+  switchOff1: {fileID: 0}
+  switchOff2: {fileID: 0}
+  switchOff3: {fileID: 0}
+  switchOff4: {fileID: 0}
+  switchOn1: {fileID: 0}
+  switchOn2: {fileID: 0}
+  switchOn3: {fileID: 0}
+  switchOn4: {fileID: 0}
 --- !u!1 &7827576593686569265
 GameObject:
   m_ObjectHideFlags: 0
@@ -32529,6 +33155,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5258972419233646038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7845974587215686529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628331692136155522}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!4 &7876271687938917796
 Transform:
   m_ObjectHideFlags: 0
@@ -32544,6 +33191,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6326968779384436128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7876271687938917797
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393685119031755594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!4 &8249214394992903234
 Transform:
   m_ObjectHideFlags: 0
@@ -32570,13 +33238,35 @@ GameObject:
   - component: {fileID: 444684531350296423}
   - component: {fileID: 7525086763018407189}
   - component: {fileID: 4466262419385701677}
-  m_Layer: 0
+  - component: {fileID: 8259641599920814288}
+  m_Layer: 7
   m_Name: SwitchOff1
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8259641599920814288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259641599920814287}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!114 &8282754291250180835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32622,13 +33312,35 @@ GameObject:
   - component: {fileID: 3707957101813827575}
   - component: {fileID: 5822511679384216235}
   - component: {fileID: 2576067467266503498}
-  m_Layer: 0
-  m_Name: SwitchOn2.001
-  m_TagString: Untagged
+  - component: {fileID: 8334951736891773359}
+  m_Layer: 7
+  m_Name: SwitchOn2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8334951736891773359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334951736891773358}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!4 &8358029827235436965
 Transform:
   m_ObjectHideFlags: 0
@@ -32644,6 +33356,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6326968779384436128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8358029827235436966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90676943990876914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!4 &8451072822012886793
 Transform:
   m_ObjectHideFlags: 0
@@ -32659,6 +33392,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5258972419233646038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8451072822012886794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891429550935653129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!23 &8571039525760471103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32708,6 +33462,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8571039525760471104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838087891817532882}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!1 &8577429194873055971
 GameObject:
   m_ObjectHideFlags: 0
@@ -32719,13 +33494,35 @@ GameObject:
   - component: {fileID: 3348453260944564910}
   - component: {fileID: 3412525746607065573}
   - component: {fileID: 405805425542107754}
-  m_Layer: 0
-  m_Name: SwitchOn1.001
-  m_TagString: Untagged
+  - component: {fileID: 8577429194873055972}
+  m_Layer: 7
+  m_Name: SwitchOn1
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8577429194873055972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577429194873055971}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.00026542268}
 --- !u!1 &8600292701959981303
 GameObject:
   m_ObjectHideFlags: 0
@@ -32737,13 +33534,35 @@ GameObject:
   - component: {fileID: 1684121846098649935}
   - component: {fileID: 2276246484913057292}
   - component: {fileID: 4788529681923410199}
-  m_Layer: 0
-  m_Name: SwitchOn4.001
-  m_TagString: Untagged
+  - component: {fileID: 8600292701959981304}
+  m_Layer: 7
+  m_Name: SwitchOn4
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8600292701959981304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600292701959981303}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 0.00000023841858, z: 0.0002654264}
 --- !u!23 &8641525887347063392
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32793,6 +33612,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8641525887347063393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499199768208366896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: 8.5910813e-19, z: 0.0002654264}
 --- !u!114 &8819476847446355647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32834,13 +33674,35 @@ GameObject:
   - component: {fileID: 1166056936323727000}
   - component: {fileID: 1461497557334572927}
   - component: {fileID: 2590170187855789482}
-  m_Layer: 0
+  - component: {fileID: 8932016849218686527}
+  m_Layer: 7
   m_Name: SwitchOff4
-  m_TagString: Untagged
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &8932016849218686527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932016849218686526}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.006612145, y: -4.6310997e-18, z: 0.00026543014}
 --- !u!23 &8971092351335371513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32890,6 +33752,54 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8971092351335371514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088873467787421078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 3599956875
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 8
+  AlwaysReplicateAsRoot: 1
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 1
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &8971092351335371515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088873467787421078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ce298c8bcd3a64582da32cc93af1b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Switchboard
+  ShowTopMostFoldoutHeaderGroup: 1
+  boardColor: 2
+  switchOff1: {fileID: 0}
+  switchOff2: {fileID: 0}
+  switchOff3: {fileID: 0}
+  switchOff4: {fileID: 0}
+  switchOn1: {fileID: 0}
+  switchOn2: {fileID: 0}
+  switchOn3: {fileID: 0}
+  switchOn4: {fileID: 0}
 --- !u!1 &9095885775664810041
 GameObject:
   m_ObjectHideFlags: 0
@@ -32901,13 +33811,35 @@ GameObject:
   - component: {fileID: 8249214394992903234}
   - component: {fileID: 2445076807091714931}
   - component: {fileID: 191561044513265456}
-  m_Layer: 0
-  m_Name: SwitchOff2.003
-  m_TagString: Untagged
+  - component: {fileID: 9095885775664810042}
+  m_Layer: 7
+  m_Name: SwitchOff2
+  m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &9095885775664810042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9095885775664810041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12516463, y: 0.020000001, z: 0.020530857}
+  m_Center: {x: -0.0066102375, y: -4.6310997e-18, z: 0.00026543386}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

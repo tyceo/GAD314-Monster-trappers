@@ -105,7 +105,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -361,9 +361,13 @@ MonoBehaviour:
   moveSpeed: 14
   jumpForce: 3
   gravity: -20.28
-  mouseSensitivity: 1.25
+  mouseSensitivity: 0.01
   cameraHolder: {fileID: 1138164182504828704}
   respawnPosition: {x: -160.31, y: 4.02, z: -338.55}
+  interactionDistance: 20
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!143 &9089218793912173069
 CharacterController:
   m_ObjectHideFlags: 0
